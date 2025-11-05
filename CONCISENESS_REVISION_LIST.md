@@ -1,8 +1,9 @@
 # Comprehensive Conciseness Revision List
 
 **Generated**: 2025-11-05
+**Updated**: 2025-11-05 (corrected items #3 and #5 based on user feedback)
 **Purpose**: Identify verbose passages that can be condensed to make the thesis more concise for busy reviewers
-**Total Potential Savings**: ~1,200 words (~3-4 pages)
+**Total Potential Savings**: ~975 words (~2.7 pages)
 
 ---
 
@@ -42,20 +43,24 @@ This reframes modality as learner-contingent alignment rather than universal des
 
 ---
 
-### 3. Chapter 2 Section 2: Lines 9-11 - Verbose CAF Trade-off Explanation
-**Location**: `Chapters/chapter02-s2.tex:9-11`
-**Problem**: 200+ word paragraph repeating well-known CAF trade-off concept
+### 3. Chapter 2 Section 2: Line 9 - Verbose CAF Trade-off Explanation
+**Location**: `Chapters/chapter02-s2.tex:9` (first paragraph)
+**Problem**: 160-word paragraph with redundant framing and excessive hedging
 
 **Current text**: Full paragraph starting "Under high task or presentation demands, speakers reallocate limited resources..."
 
-**Why verbose**: Over-explains basic CAF trade-off that's covered elsewhere, too many hedges and qualifications
+**Why verbose**:
+- CAF trade-off concept already introduced in **Chapter 1:29** ("These trade-offs among complexity, accuracy, and fluency reflect adaptive responses to limited cognitive resources")
+- Theoretical models already explained in **chapter02-s1.tex:74** (Skehan's Limited Attentional Capacity Model, Robinson's Cognition Hypothesis)
+- This paragraph should focus on EMPIRICAL SIGNATURES, not re-explain the concept
+- Middle section ("Experimental evidence suggests...") is wordy setup for what comes next
 
-**How to fix**: Condense to 2 sentences:
+**How to fix**: Keep the key empirical connections but trim redundant framing (condense to ~80 words):
 ```latex
-Under high demands, speakers reallocate limited resources among CAF dimensions \parencite{housen2009}. When online pressure is eased through planning time or clear goals, learners typically sustain steadier flow and attempt more elaborated language \parencite{EllisYuan2004}.
+Under high demands, speakers reallocate limited resources among CAF dimensions, shifting away from syntactic elaboration or error monitoring to maintain fluency, or slowing speech rate to preserve accuracy \parencite{housen2009}. Task conditions nudge this balance predictably: when pressure is eased through planning time or clear goals, learners sustain steadier flow and attempt more elaborated language. These reallocations become the raw material for listener judgments; the timing choices that help speakers maintain continuity are the cues listeners use to judge whether speech is smooth and easy to follow \parencite{KormosDenes2004,EllisYuan2004}.
 ```
 
-**Words saved**: ~150 words
+**Words saved**: ~80 words
 
 ---
 
@@ -76,20 +81,28 @@ CLT was motivated by evidence that means-ends analysis consumes working memory w
 
 ---
 
-### 5. Chapter 2 Section 1: Lines 50-56 - Verbose Consolidation Section
-**Location**: `Chapters/chapter02-s1.tex:50-56`
-**Problem**: 2 paragraphs of meta-commentary about CLT's current state
+### 5. Chapter 2 Section 1: Lines 52-56 - Verbose Consolidation Section
+**Location**: `Chapters/chapter02-s1.tex:52-56` (subsection "Consolidation, Replication, and Extensions")
+**Problem**: 3 paragraphs (~250 words) with excessive hedging and wordy phrasing
 
 **Current text**: Starting "Recent summaries portray CLT as consolidated and refined..."
 
-**Why verbose**: Says "CLT is well-established" in many words; doesn't add empirical content
+**Why verbose**:
+- Paragraph 1: repeats "prescriptions" and over-explains what should be condensed principles
+- Paragraph 3: redundant framing ("Across these extensions, the unifying message is...")
+- However, this subsection contains IMPORTANT content:
+  - Methodological principles for the thesis
+  - Motivational integration (relevant to Study 3's self-efficacy measures!)
+  - L2-specific applications
 
-**How to fix**: Condense to 2 sentences:
+**How to fix**: Keep all three main ideas but tighten wording (condense to ~120-130 words):
 ```latex
-Recent work integrates CLT with motivational theories, showing that load management combined with autonomy support yields lower reported load and higher engagement \parencite{evans2024,skulmowski2023}. Applied summaries extend these mechanisms to L2 teaching, recommending explicit instruction and redundancy control for adult novices until schemas consolidate \parencite{Sweller2017TESL}.
+Recent summaries portray CLT as consolidated and refined by replication work and integration with compatible perspectives \parencite{sweller2019,chenpass2023}. Practical implications follow: manipulations should be justified in terms of predicted changes in element interactivity for a given population, and measurement choices should be aligned with the architecture \parencite{chandler1991,sweller2010}. These prescriptions presume attention to expertise, as guidance essential for novices can become redundant as knowledge grows \parencite{sweller2010,sweller2019}.
+
+Recent work integrates CLT with motivational theories. Instructional formats that reduce extraneous load and provide clear structure can be combined with autonomy support, yielding lower reported cognitive load and higher engagement \parencite{evans2024,skulmowski2023}. Applied summaries extend these mechanisms to L2 teaching, arguing that explicit instruction and careful control of redundancy and split-attention are preferable to unguided immersion for adult novices until schemas consolidate \parencite{Sweller2017TESL}. The contrasts and measures in this thesis follow these consolidated prescriptions on integration, redundancy, and segmentation, with expertise treated as a moderator.
 ```
 
-**Words saved**: ~140 words
+**Words saved**: ~120 words
 
 ---
 
@@ -256,28 +269,30 @@ This reallocation is sensible: as relations increase, message formulation and le
 
 | Priority | Items | Total Words Saved |
 |----------|-------|-------------------|
-| 🔴 Critical (Must Fix) | 5 | ~510 words |
+| 🔴 Critical (Must Fix) | 5 | ~420 words |
 | 🟡 Medium (Should Fix) | 5 | ~390 words |
 | 🟢 Low (Optional) | 5 | ~165 words |
-| **TOTAL** | **15** | **~1,065 words** |
+| **TOTAL** | **15** | **~975 words** |
 
 ---
 
 ## Implementation Priority Order
 
 1. **Fix Critical duplications (Items #1-5)**: Immediate, high impact
-   - Chapter 12 duplications (#1, #2)
-   - Chapter 2 verbose background (#3, #4, #5)
-   - **Impact**: ~510 words saved (~1.5 pages)
+   - Chapter 12 duplications (#1, #2) - 40 words
+   - Chapter 2 verbose background (#3, #4, #5) - 380 words
+   - **Impact**: ~420 words saved (~1.2 pages)
 
 2. **Condense Medium sections (Items #6-10)**: Moderate effort, good return
-   - Chapter 2 technical details (#6, #7)
-   - Chapter 12 repetitions (#8, #9, #10)
+   - Chapter 2 technical details (#6, #7) - 220 words
+   - Chapter 12 repetitions (#8, #9, #10) - 170 words
    - **Impact**: ~390 words saved (~1 page)
 
 3. **Optional Low priority (Items #11-15)**: Only if you want maximum conciseness
    - Minor tightening across chapters
    - **Impact**: ~165 words saved (~0.5 page)
+
+**Total potential savings: ~975 words (~2.7 pages)**
 
 ---
 
