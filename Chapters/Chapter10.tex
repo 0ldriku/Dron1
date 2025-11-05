@@ -72,7 +72,7 @@ We hypothesize:
 
 \subsection{Data Preprocessing}
 
-Raw gaze and pupil recordings were exported as per–segment files organised by participant and section. Processing was conducted at the file level and produced, for each segment, a continuous, baseline–corrected pupil trace aligned to a data–driven baseline within that segment, together with a quality–control log and per–file diagnostics. Procedures follow established guidance for pupillometry \parencite{vanRij2019}.
+Raw gaze and pupil recordings were exported as per–segment files organized by participant and section. Processing was conducted at the file level and produced, for each segment, a continuous, baseline–corrected pupil trace aligned to a data–driven baseline within that segment, together with a quality–control log and per–file diagnostics. Procedures follow established guidance for pupillometry \parencite{vanRij2019}.
 
 Room lighting and display luminance were held constant across participants. Only sections 1–3 were processed. Recording time was expressed in milliseconds.
 
@@ -97,7 +97,7 @@ The resulting series is interpretable as change from baseline in the eye tracker
 
 \subsection{Temporal Resolution and Gaze Position}
 
-Pupil responses evolve slowly relative to typical sampling rates; many pipelines downsample to 50\,Hz or below to reduce serial dependence and speed estimation \parencite{vanRij2019}. Here the native sampling rate (60\,Hz) was retained to preserve the timing of section boundaries and blink dynamics, and serial dependence was addressed at the analysis stage by modelling residual autocorrelation (AR(1)) within the generalised additive framework (see Statistical Analysis). Apparent pupil size varies systematically with gaze position due to foreshortening and related optical factors and can approach the magnitude of task–evoked responses \parencite{vanRij2019}. Rather than altering the pupil signal during preprocessing, gaze–dependent variation was controlled analytically in the statistical model via a two–dimensional smooth of horizontal and vertical gaze position. Preprocessing therefore preserves the raw gaze coordinates to enable that correction.
+Pupil responses evolve slowly relative to typical sampling rates; many pipelines downsample to 50\,Hz or below to reduce serial dependence and speed estimation \parencite{vanRij2019}. Here the native sampling rate (60\,Hz) was retained to preserve the timing of section boundaries and blink dynamics, and serial dependence was addressed at the analysis stage by modeling residual autocorrelation (AR(1)) within the generalized additive framework (see Statistical Analysis). Apparent pupil size varies systematically with gaze position due to foreshortening and related optical factors and can approach the magnitude of task–evoked responses \parencite{vanRij2019}. Rather than altering the pupil signal during preprocessing, gaze–dependent variation was controlled analytically in the statistical model via a two–dimensional smooth of horizontal and vertical gaze position. Preprocessing therefore preserves the raw gaze coordinates to enable that correction.
 
 \subsection{Output Structure and Validation}
 
