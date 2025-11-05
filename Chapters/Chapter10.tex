@@ -1,0 +1,257 @@
+%************************************************
+\chapter{Study 5: Temporal Dynamics of Cognitive Load in Comprehension}\label{ch:study5}
+%************************************************
+
+
+\section{Introduction}
+
+
+
+Study 3 established that linguistic complexity, domain, and modality can jointly shape cognitive load, self-efficacy, and comprehension accuracy. Study 4 examined how these factors manifest in eye-movement behavior during text reading, revealing that linguistic complexity dominates global timing and spatial attention patterns, with domain expertise producing selective, context-dependent benefits. However, both outcome measures (Study 3, \autoref{ch:study3}) and spatial eye-movement patterns (Study 4, \autoref{ch:study4}) face a common limitation: they cannot capture moment-to-moment fluctuations in cognitive effort within a single passage section. Aggregate measures reduce dynamic processes to static summaries. Comprehension scores, mean fixation durations, and total reading times may miss transient spikes, recoveries, and temporal patterns that reveal how learners allocate limited resources over time.
+
+Study 5 addresses this gap by analyzing continuous pupil diameter trajectories as a time-resolved physiological index of cognitive load. Pupil dilation reliably tracks processing effort during reading, scaling with linguistic complexity, lexical difficulty, and integration demands \parencite{zekveld2010pupil, pichora2016hearing}. Critically, pupillometry provides three advantages over the measures used in Studies 3 and 4. First, it is continuous and sampled at high temporal resolution, capturing within-section dynamics that aggregate indices miss. Second, it operates across both text and video modalities, whereas the position-anchored eye-movement measures in Study 4 required stable spatial layouts and were restricted to text. Third, because the pupil signal is slow and autocorrelated, effects may be time-localized rather than uniform (e.g., early coordination costs during initial integration or late-section fatigue), which motivates modeling the complete temporal trajectory rather than extracting single summary features.
+
+The central question is whether the outcome patterns observed in Study 3 and the eye-movement signatures documented in Study 4 manifest as distinct temporal profiles of physiological effort, and whether these profiles reveal when and how cognitive demands are distributed over time. Specifically, does linguistic complexity produce sustained elevation throughout a section or transient early spikes? Does video presentation reduce effort uniformly or only during specific integration windows when audiovisual coordination is most demanding? Does domain expertise buffer effort by lowering peak demands, accelerating recovery, or both? To address these questions, the present study models pupil diameter trajectories using generalized additive mixed models. These models estimate smooth, potentially nonlinear curves over normalized section time and allow condition-specific temporal patterns to emerge from the data (RQ1). Beyond average levels, we examine whether the temporal shape of trajectories (rise steepness, peak timing, curvature, and decay) varies systematically with task and learner factors (RQ2). Together, these analyses provide a physiological complement to the eye-movement evidence in Study 4, clarifying not only where processing costs are highest but when they accumulate and dissipate within extended L2 academic reading.
+
+\section{Background}
+\subsection{Pupil Dilation, Cognitive Load, and Reading}
+
+Building on the mechanisms reviewed in \autoref{subsec:comp-sigs}, this section focuses on extended L2 passages and why within-section trajectories are required. This supports a load interpretation but also implies that motivation and strategic allocation can modulate the signal. Modern workflows emphasize blink handling, sensible baseline correction, temporal resolution, and modeling the trajectory over time \parencite{fink2024, mathot2023}. These recommendations address limitations of earlier reading studies that often sampled sparsely or ignored gaze geometry, conditions under which effects can wash out. When gaze position and baseline are treated appropriately, the pupil is sensitive to linguistic difficulty at multiple levels: pseudowords elicit larger responses than familiar words, with length effects that amplify decoding demands \parencite{shechter2021}; at the sentence level, frequency, predictability, and length, as well as recognition processes, shape the pupil signal \parencite{fernandez2016}.
+
+However, sensitivity is not uniform across paradigms. The pupil is slow and autocorrelated, and effects can be transient or late, so analyses based on single aggregates can mischaracterize the dynamics. Moreover, factors that genuinely reduce processing load can produce the same direction of change as factors that discourage effort investment. This overlap complicates interpretation if design and analysis do not separate load reduction from disengagement. For Study 5, the relevant conclusion is that pupil dilation can track the costs of decoding and integration during reading, provided that preprocessing and analysis respect the time course and geometry of the signal. What is still uncertain is how these reading-related effects interact with learner characteristics and with modality manipulations in extended academic passages, rather than in short, isolated stimuli.
+
+\subsection{Pupillometry in L2 Processing and Bilingualism}
+
+Across the bilingual literature, pupil dilation is typically larger for L2 than for L1 processing in both listening and speaking, and it scales with control demands, with simultaneous interpretation producing greater dilation than shadowing or listening; these effects are moderated by proficiency and lexical factors such as cognate status, and codeswitching costs shrink when switches occur at predictable junctures \parencite{BeattyMartinez2021}. When bilinguals hear L2 sentences in masking, dilation generally exceeds that observed for L1 under the same conditions \parencite{VanEngenMcLaughlin2018}. Taken together, L2 effort is not uniform; it depends on controllability, predictability, and knowledge, and it can reflect compensatory allocation rather than failure. What remains underexplored (and motivates Study 5) is how these mechanisms unfold over extended academic passages, and how domain expertise shapes the resulting effort trajectories.
+
+
+\subsection{Modality, Listening effort, and Audiovisual Integration}
+
+For general mechanisms and evidence on audiovisual integration and pupil-based effort (see \autoref{subsec:extraneous}). Here we restrict background to the design choices that matter for extended L2 academic passages under fixed pacing. When narration and visuals are tightly coordinated and nonredundant, cross-channel scaffolding should reduce avoidable mapping and ease early coordination within a section. When integration costs or transient auditory demands are salient, brief increases in effort can emerge at points of high binding demand, for example near section transitions or when rapid visual change precedes narration. Because pupil responses are slow and autocorrelated, such differences are expected to appear as localized divergences in the temporal smooth rather than as uniform level shifts.
+
+Accordingly, Study~5 tests whether video presentation produces smaller early rises and more stable mid-section profiles than text when alignment is strong, and whether brief increases appear at predicted integration junctures. The trajectory-based analysis focuses on when in the section these divergences occur, not solely on averages, which matches the instructional logic of segmentation and signaling in extended materials.
+
+
+
+
+
+\section{Research Questions}
+
+The reviewed evidence establishes that pupil dilation tracks processing effort during L2 comprehension, but most studies have examined short stimuli or extracted single summary measures. The present study extends this work to academic passages and models the complete temporal trajectory to reveal when and how cognitive demands are distributed over time.
+
+Based on this foundation, the study addresses the following research questions:
+
+\begin{description}
+    \item[RQ1:] How does pupil diameter change over the course of passage sections as a function of linguistic complexity, presentation modality, content domain, and academic major?
+\end{description}
+Drawing on findings from Studies 3 and 4, we hypothesize:
+
+\begin{description}
+    \item[H1a:] Complex passages will elicit larger early rises and more sustained elevation than simple passages.
+    \item[H1b:] Video presentation will show smaller early rises than text when narration and visuals are well-aligned, but may exhibit transient increases at integration junctures.
+    \item[H1c:] Learners in domain-congruent conditions will show attenuated amplitudes and faster returns toward baseline.
+\end{description}
+
+\begin{description}
+    \item[RQ2:] Beyond average levels, does the temporal shape of pupil trajectories (including onset latency, peak timing and amplitude, rise/fall steepness, curvature, and area under the curve) vary systematically with task and learner factors?
+\end{description}
+
+We hypothesize:
+
+
+\begin{description}
+    \item[H2a:] Linguistic complexity will produce larger peaks or broader areas under the curve.
+    \item[H2b:] Modality effects will concentrate in specific time windows rather than appearing as uniform offsets.
+    \item[H2c:] Domain-aligned majors will show attenuated trajectories with faster return toward baseline, especially in the latter halves of sections.
+\end{description}
+
+
+
+
+\section{Method}
+
+\subsection{Data Preprocessing}
+
+Raw gaze and pupil recordings were exported as per–segment files organised by participant and section. Processing was conducted at the file level and produced, for each segment, a continuous, baseline–corrected pupil trace aligned to a data–driven baseline within that segment, together with a quality–control log and per–file diagnostics. Procedures follow established guidance for pupillometry \parencite{vanRij2019}.
+
+Room lighting and display luminance were held constant across participants. Only sections 1–3 were processed. Recording time was expressed in milliseconds.
+
+\subsection{Data Analysis}
+
+Because the pupil signal is slow, autocorrelated, and condition effects can be time localized, trajectory-based inference is essential. Generalized additive mixed models estimate smooth functions of time, allow interactions between time and experimental factors, support nonlinear random effects, and can incorporate autoregressive structures that address serial dependence in the errors \parencite{vanRij2019}. This framework aligns with the theoretical aim to identify when and how effort diverges across conditions, rather than only whether averages differ. It also improves interpretability for modality questions in which early scaffolding, mid-section integration, and late consolidation may dissociate. For Study 5, GAMMs therefore operationalize the theoretical commitments above: they model within-section trajectories, isolate time windows of divergence, and respect the dependence structure of pupillometry.
+
+
+\subsection{Quality Control and Workable Baseline Identification}
+
+A binocular pupil signal was constructed using eye–validity flags: when both eyes were valid the two measurements were averaged; when only one eye was valid that eye was used; when neither was valid the sample was treated as missing. Files with more than 50\% missing samples on this composite signal failed quality control and were excluded. Because pre–onset baselines can be sparse in task–based recordings, each segment was anchored to a \emph{workable baseline}: within the first 10\,s of the segment, the earliest 500\,ms window containing fewer than 50\% missing samples was identified. The series was then re–expressed in time relative to the start of that window and trimmed so that time zero coincided with the workable baseline. Files without such a window were excluded. This approach ensures that baseline correction is calculated from observed rather than imputed data.
+
+\subsection{Interpolation and Baseline Correction}
+
+Within the trimmed series, short gaps were filled by linear interpolation. No additional blink padding, smoothing, or downsampling was applied. In line with recommendations against percentage normalisation in pupillometry \parencite{vanRij2019}, baseline correction was performed by subtraction, using the mean pupil diameter 
+over the first 500\,ms (the workable–baseline window) as the reference:
+\[
+\text{pupil}_{\text{baselined}}(t) = \text{pupil}_{\text{interpolated}}(t) - \overline{\text{pupil}}_{[0,500\,\text{ms}]}.
+\]
+
+The resulting series is interpretable as change from baseline in the eye tracker’s native units. Because interpolation can extrapolate at the leading and trailing edges of a segment, results very near segment boundaries are interpreted cautiously.
+
+\subsection{Temporal Resolution and Gaze Position}
+
+Pupil responses evolve slowly relative to typical sampling rates; many pipelines downsample to 50\,Hz or below to reduce serial dependence and speed estimation \parencite{vanRij2019}. Here the native sampling rate (60\,Hz) was retained to preserve the timing of section boundaries and blink dynamics, and serial dependence was addressed at the analysis stage by modelling residual autocorrelation (AR(1)) within the generalised additive framework (see Statistical Analysis). Apparent pupil size varies systematically with gaze position due to foreshortening and related optical factors and can approach the magnitude of task–evoked responses \parencite{vanRij2019}. Rather than altering the pupil signal during preprocessing, gaze–dependent variation was controlled analytically in the statistical model via a two–dimensional smooth of horizontal and vertical gaze position. Preprocessing therefore preserves the raw gaze coordinates to enable that correction.
+
+\subsection{Output Structure and Validation}
+
+For each processed file a diagnostic panel was saved showing the baseline–corrected trace with the baseline marked at zero, together with two quality indicators: the proportion of missing samples before interpolation and an estimated blink rate (distinct blink identifiers per minute). Every file was entered in a processing log with participant identifier, file name, status (success, failed, or skipped), and reason. For successfully processed files, experimental factors (domain, complexity, modality, section) were recovered from the filename and attached to every sample along with the participant identifier. Per–file tables containing time, baseline–corrected pupil, and gaze position were concatenated across participants into a single tidy dataset and written to disk alongside the processing log and diagnostic plots.
+
+In sum, the pipeline (i) constructs a validity–aware binocular composite; (ii) enforces explicit file–level quality thresholds; (iii) anchors each segment to a workable, data–driven baseline and applies subtraction rather than percentage normalisation; (iv) retains native temporal resolution while addressing serial dependence during analysis; and (v) preserves gaze coordinates for analytic correction of foreshortening. These choices are consistent with current methodological guidance for pupillometry in reading and multimodal tasks \parencite{vanRij2019}.
+
+
+
+
+\subsection{Statistical Analysis}
+
+We analyzed pupil diameter during reading as the dependent variable. Values were baseline corrected within segment, standardized within participant, and modeled on the standardized scale. The within participant factors were linguistic complexity (simple, complex), presentation modality (text, video), content domain (history, science), and section within passage (Sections 1 to 3); the between participant factor was academic major (Arts and Social Sciences, Science). Time within each section was normalized to the unit interval. Screen gaze position in Cartesian coordinates was included to control geometric and oculomotor effects. Generalized additive models were fit with \texttt{mgcv} using fast restricted maximum likelihood. Normalized time was represented with thin plate regression splines that varied by the full interaction of complexity, modality, domain, major, and section, thereby allowing condition specific temporal trajectories; participant specific temporal variability was captured with a factor smooth of time by participant; a two-dimensional smooth of gaze position absorbed spatially patterned variance; no separate item effect was retained in the final specification. Serial dependence was addressed with an autoregressive process of order one: the autoregressive coefficient was first estimated from a reduced model that omitted the participant factor smooth, and the final model (Equation~\ref{eq:gamm-main}) was then fit with that coefficient and \texttt{AR.start} marking the first sample of each participant by section series. Model adequacy was evaluated with \texttt{gam.check}, inspection of residual autocorrelation functions, and examination of the k indices for smooth terms. Modality effects were summarized as time-integrated contrasts of text minus video within each complexity by domain cell, marginalizing over section and major; familywise error was controlled with false discovery rate adjustment. For temporal visualization, pointwise contrasts were computed on a dense grid of normalized time with section and major treated as nuisance factors and gaze coordinates centered. In compact form, with $y_{it}$ the standardized pupil diameter for observation $t$ in participant $i$,
+\begin{equation}\label{eq:gamm-main}
+\begin{split}
+y_{it} &= \beta_{0} + \mathbf{X}_{it}\boldsymbol{\beta}
++ \sum_{c \in \mathcal{C}} f_{c}\!\big(\text{time}_{it}\big)
++ f_{i}\!\big(\text{time}_{it}\big) \\
+&\quad + g\!\big(\text{gazeX}_{it}, \text{gazeY}_{it}\big)
++ \varepsilon_{it}, 
+\qquad \varepsilon_{it} \sim \text{AR}(1),
+\end{split}
+\end{equation}
+where $\mathbf{X}_{it}\boldsymbol{\beta}$ encodes the factorial design, $f_{c}$ are condition specific smooths of time, $f_{i}$ is the factor smooth of time by participant, and $g$ is the two-dimensional spatial smooth of gaze position. 
+
+
+
+To test whether the shape of within-section pupil trajectories varies with task and learner factors, we first generated predicted trajectories from the RQ1 generalized additive model by evaluating over a dense grid of normalized section time, turning off participant specific smooths, and fixing gaze coordinates at the origin. For each factorial cell and section we verified temporal structure using false discovery rate corrected tests on the cell level smooth term; forty seven of forty eight smooths survived correction.
+
+Because the unit of analysis is the trajectory (one predicted trajectory per section per factorial cell; $n=47$ usable trajectories), we restricted confirmatory Ordinary Least Squares (OLS) models to theoretically motivated two way terms to avoid overfitting. We computed three dependent variables from each trajectory: (a) magnitude as peak to trough range; (b) shape complexity as mean absolute first difference; and (c) trend as the direction of change from the start to the end of the section. Trend was classified by comparing the mean of the final decile to the mean of the initial decile, rising if the ratio exceeded 1.01, falling if the ratio was below 0.99, flat otherwise, then mapped to a numeric scale for analysis (falling $=-1$, flat $=0$, rising $=+1$). Sensitivity analyses varied the threshold from one half percent to five percent.
+
+Models were specified as follows. For trend (the primary outcome), we tested fixed effects of complexity, modality, domain, and major, with the single planned interaction modality × major that operationalizes the learner–format alignment hypothesis:
+\[
+\textit{trend\_numeric} \sim \text{complexity} + \text{modality} \times \text{major} + \text{domain}.
+\]
+For the two secondary outcomes we examined two way terms motivated by design: 
+\begin{align*}
+\textit{magnitude} &\sim \text{complexity} \times \text{modality} + \text{domain} \times \text{major}, \\
+\textit{shape\_complexity} &\sim \text{complexity} \times \text{modality} + \text{domain} \times \text{major}.
+\end{align*}
+Modality took levels text and video; major took levels Science and Arts and Social Sciences. Given the single planned interaction for trend, multiplicity was handled by limiting the model space a priori and by corroborating the focal effect with a permutation test that shuffled condition labels within-sections; this yielded $p<0.0001$. For transparency we also report model $R^{2}$ values and unadjusted $p$ values for all terms in the main text and tables.
+
+
+
+
+\section{Results}
+
+
+\subsection{RQ1: Time-Integrated Modality Contrasts}
+The model explained 48.0\% of total deviance (adjusted $R^2 = 0.479$), indicating good fit to the data. Analysis of the nonlinear smooth terms supported the specification. The participant specific factor smooth for normalized time was highly significant (edf $\approx 283.83$, $F \approx 1689$, $p < .001$), capturing substantial interparticipant variation in temporal trajectories. The two-dimensional gaze contingent spline was also significant (edf $\approx 18.67$, $F \approx 63$, $p < 0.001$), and the time by condition interaction smooths were significant as a set (all $p$ values < .001), validating the nonlinear approach.
+
+We focus inference on time-integrated and section marginalized contrasts. Time-integrated contrasts of text minus video, presented in \textbf{Table \ref{tab:modality-contrasts}}, revealed two significant modality effects. A video advantage, that is, smaller pupil dilation for video than text, was found for simple history (estimate $= -0.616$ SD, adjusted $p = 0.0075$) and for complex science (estimate $= -0.721$ SD, adjusted $p = 0.0017$). No reliable modality differences were observed for complex history (estimate $= -0.168$ SD, adjusted $p = 0.466$) or for simple science (estimate $= -0.127$ SD, adjusted $p = 0.580$). Temporal inspection of these contrasts, visualized in \textbf{Figure \ref{fig:temporal-dynamics}}, showed early onset and sustained differences in the two significant cells, with 95\% to 100\% of time points remaining significant after false discovery rate correction. This selective video advantage on the pupil signal mirrors the pattern in Study 3 (\autoref{ch:study3}), where format could increase reported difficulty without depressing accuracy, so we interpret these effects as selective reductions in moment-to-moment effort rather than as global task ease. Full coefficient tables are provided in the Appendix.
+
+% --- LaTeX Table for Time-Integrated Contrasts ---
+
+\begin{table}[h!]
+\centering
+\footnotesize
+\caption{Summary of time-integrated modality contrasts (Text minus Video), averaged over section and major}
+\label{tab:modality-contrasts}
+\begin{tabular}{ll
+                S[table-format=-0.3]
+                S[table-format=0.2]
+                S[table-format=-0.3]
+                c}
+\toprule
+\textsc{Complexity} & \textsc{Domain} & {\textsc{Estimate}} & {SE} & {t.ratio} & {\textit{p}} \\ 
+\midrule
+complex & history & -0.168 & 0.23 & -0.729 & $\phantom{<}.466$ \\
+simple  & history & -0.616 & 0.23 & -2.675 & $\phantom{<}.008$ \\
+complex & science & -0.721 & 0.23 & -3.133 & $\phantom{<}.002$ \\
+simple  & science & -0.127 & 0.23 & -0.553 & $\phantom{<}.580$ \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% --- End of Table ---
+
+% --- LaTeX Figure Placeholder (Self-Contained) ---
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\linewidth]{Chapters/study5fig/s5f1.png} % save your first plot with this name
+\caption{Temporal dynamics of modality effects, Text minus Video, across normalized time. Shaded ribbons indicate 95\% confidence intervals. Red marks time points that remain significant after false discovery rate correction.}
+\label{fig:temporal-dynamics}
+\end{figure}
+% --- End of Figure Placeholder ---
+
+
+\subsection{RQ2: Trajectory-Level Shape Analysis}
+
+With $n=47$ trajectories, the preplanned trajectory level OLS models focused on theoretically motivated two way terms to limit overfitting. The trend model included the single planned \textit{modality} × \textit{major} interaction; magnitude and shape complexity models included \textit{complexity} × \textit{modality} and \textit{domain} × \textit{major}. Time structured trajectories were the norm. Forty seven of forty eight cell level temporal smooths passed false discovery rate screening, confirming that within-section pupil dynamics were systematically shaped by the design. Linear modeling identified a single effect that was both large and stable, a Video by Science major interaction on trend. On the numeric trend scale the estimated shift was $1.53$ with $t=4.17$ and two-sided $p=0.000154$, and the trend model showed strong fit with $R^{2}=0.593$. The interaction is visible in the trend proportion plot, see Figure~\ref{fig:rq2-trend-patterns}, and in the predicted trajectories, see Figure~\ref{fig:rq2-trajectories}. The interaction proved robust across threshold choices for the trend classifier; estimates ranged from $1.11$ to $1.53$ for bands from one half percent to five percent, all $p<0.005$. A nonparametric permutation test of the modality by major interaction on trend, shuffling condition labels across trajectories, yielded $p<0.0001$. Group summaries aligned with the model. Aggregating trajectory level trend codes within each condition, Science majors under video showed a positive mean trend of approximately $+0.833$, whereas the same group under text showed a negative mean trend of approximately $- 1.000$. Arts or social sciences majors showed negative or near zero mean trend in both modalities, approximately $-0.667$ for text and $-0.364$ for video. By contrast, the models for magnitude and complexity explained modest variance, $R^{2}=0.130$ and $R^{2}=0.149$ respectively, indicating that amplitude and local volatility of the pupil trajectory were less systematically governed by the experimental factors than temporal direction.
+
+
+
+
+% --- Figure 1: Trend proportions by modality, faceted by major ---
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{Chapters/study5fig/s5_rq2_trend_patterns.png} % save your first plot with this name
+\caption{Trajectory trend proportions by presentation modality, faceted by major. Proportions of falling, flat, and rising trajectories show that Science majors shift from mostly falling under text to mostly rising under video, consistent with the significant modality by major interaction on the trend scale.}
+\label{fig:rq2-trend-patterns}
+\end{figure}
+
+% --- Figure 2: Predicted trajectories by modality and major ---
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{Chapters/study5fig/s5_rq2_trajectories.png} % save your trajectories panel with this name
+\caption{Predicted pupil trajectories by presentation modality and major, shaded areas show 95 percent confidence intervals. Science majors show sustained or rising engagement with video and a declining pattern with text, which aligns with the trend classification used for analysis.}
+\label{fig:rq2-trajectories}
+\end{figure}
+
+\section{Discussion}
+
+\subsection{RQ1: Video Advantages and Limits}
+
+The time-integrated contrasts showed a selective video advantage, smaller dilation than text in simple history and in complex science, with sustained temporal separations. This pattern echoes format effects reviewed in \autoref{ch:cogload}: when mutually referring streams are physically or temporally integrated and nonredundant, avoidable mapping is reduced and coordination becomes more economical \parencite{chandler1991,ginns2006,mousavi1995,mayer2003,sweller2019}. In that view, the present reductions in dilation indicate lower invested effort for those cells, consistent with pupillometry as an effort index \parencite{zekveld2010pupil,pichora2016hearing}. The result also aligns with multimedia segmentation and signaling findings that early, well aligned scaffolding can ease initial integration and stabilize processing \parencite{spanjers2012,alpizar2020}. This pattern directly extends Study 3's finding that modality effects on cognitive load were condition-specific rather than uniform. While Study 3 captured subjective experience, the present pupillometry data provide physiological confirmation that video presentation reduces invested effort in specific content-complexity combinations. Taken together, these results support H1b's alignment claim—video elicited smaller, earlier-onsetting dilation than text in the two cells with strong coordination ,but we did not observe the predicted narrow transient spikes at integration junctures.
+
+
+
+At the same time, the absence of a video advantage in complex history and simple science qualifies any claim of a general format benefit. The mixed pattern is against a simple superadditive account from minimal detection paradigms where audiovisual input often yields larger dilations than either unimodal stream \parencite{Rigato2016}. It is compatible with speech in noise work showing that under certain constraints the acoustic burden dominates effort and limits additive gains \parencite{Kadem2020}. In extended academic materials, format appears to help when alignment and pacing mesh with content structure, but integration costs or transient auditory demands can offset that help in other cells \parencite{mayer2003,mattys2012speech}.
+
+Methodologically, the absence of a global complexity main effect at the integral level means that, as stated, H1a cannot be confirmed here; any complexity-driven early rise would need time-window contrasts rather than section-wide aggregates. It echoes trajectory arguments that pupil effects are slow and time localized, so single aggregates can miss brief rises and recoveries \parencite{vanRij2019}. Reading research similarly distinguishes early and late measures that index different stages of processing \parencite{rayner1998,Rayner2009}. The present trajectory approach therefore captures where in a section effort diverges, which is the relevant grain for instructional pacing and signaling.
+
+Relative to CLT, these findings extend classic contiguity and redundancy logic to extended L2 passages: after intrinsic demands are set by linguistic complexity, format can reduce extraneous coordination in specific content profiles, but not uniformly \parencite{chandler1991,sweller2010,sweller2019}. The cell specificity cautions against broad prescriptions and supports design that is segmented, signaled, and matched to discourse structure \parencite{mayer2003,spanjers2012}.
+
+\subsection{RQ2: Disciplinary Expertise and Engagement}
+
+The preplanned trajectory analysis identified a robust modality by major interaction on trend: Science majors showed rising trajectories under video presentation and declining trajectories under text, whereas Arts and Social Sciences majors were flat to declining in both formats. This echoes disciplinary literacy work in which domain knowledge structures guide attention, promote anticipation, and support integration during reading \parencite{shanahan2008teaching,wineburg1991reading,goldman2002functional}. For STEM trained readers, coordinated visuals plus narration plausibly align with familiar representational schemas, sustaining investment through a section; for text alone, the same readers show gradual decline. This pattern contradicts H1c as stated (attenuated amplitudes and faster returns in domain-congruent conditions); instead, expertise modulates the direction of change, with Science majors rising under video and declining under text.
+
+
+This finding complements Study 4's eye-tracking results, which showed that linguistic complexity dominated spatial attention patterns for all learners. While Study 4 found that expertise effects were selective and emerged primarily in simple passages, the present trajectory analysis reveals that expertise also determines whether effort is sustained or declines over the course of a section—a temporal dimension that spatial eye-movement measures cannot capture.
+
+
+The pattern is consistent with CLT expertise effects, where supports that reduce coordination demands can yield the largest benefits when they align with the learner’s prior knowledge, though not all learners benefit equally and reversal can appear as knowledge grows \parencite{kalyuga2007,sweller2010,sweller2019}. Here we observe alignment rather than reversal, a rise for Science majors under video presentation, which suggests that complementary channels were informative rather than redundant for that group.
+
+The interaction also extends bilingual pupillometry that treats dilation as mobilized resources rather than fixed difficulty, with magnitude and timing moderated by controllability, predictability, and knowledge \parencite{BeattyMartinez2021,VanEngenMcLaughlin2018}. The present result situates that logic in extended L2 academic reading: the critical distinction was whether effort builds or decays over time, not how large the peak is. That amplitude and local volatility explained less variance than trend accords with trajectory based recommendations to look beyond single peaks and areas to the direction and timing of change \parencite{vanRij2019}. Consistent with this, H2a was not supported (peaks/AUC did not reliably increase with complexity), and H2b was contradicted in the cells showing format effects (differences were sustained, not window-limited); H2c was not directly tested by the reported models.
+
+
+Finally, the results are compatible with eye movement accounts that link difficulty to slower advance and more backtracking \parencite{rayner1998,Rayner2009}, while adding that physiological directionality across a section carries information not captured by aggregate dwell time. In applied terms, trend indicates whether design sustains engagement or permits drift, which is critical when pacing is fixed.
+
+Two caveats remain. First, section specific claims would require treating section as a moderator in the RQ2 models. Second, trend captures direction rather than absolute level and therefore complements rather than duplicates the RQ1 integral contrasts.
+
+\subsection{Links to Study 4 and Implications}
+
+Study 4 and Study 5 converge on a capacity sharing account with distinct levers. Study 4, in text, showed linguistic complexity as the primary driver of navigation and spatial footprint, with selective expertise effects \parencite{Rayner2009,VonderMalsburg2015,GodfroidWinke2019}. Study 5 adds format and shows that video presentation selectively reduces invested effort and shifts engagement direction in specific cells, strongest for Science majors. Together these studies echo CLT claims that managing intrinsic load creates headroom and that contiguity, nonredundant modality, and segmentation can reduce extraneous demand when aligned to structure \parencite{chandler1991,mayer2003,spanjers2012,sweller2019}. They diverge from superadditive audiovisual effects reported for minimal detection tasks \parencite{Rigato2016}, indicating that in extended, well aligned instruction, scaffolding can outweigh integration costs. They extend listening effort results by locating differences in the temporal profile of effort rather than only in mean level \parencite{zekveld2010pupil,pichora2016hearing}.
+
+Practical implications follow. First, manage intrinsic load to create headroom, for example by controlling linguistic complexity and cohesion, since these govern scanpath organization and baseline effort \parencite{rayner1998,VonderMalsburg2015}. Second, where content structure permits cross channel scaffolding, prefer segmented and signaled video presentations that co time narration with visual change and avoid redundancy \parencite{mayer2003,ginns2006,spanjers2012}. Third, anticipate stronger sustained engagement for STEM trained readers under video presentation in simple narrative history and linguistically complex science, with more heterogeneous patterns for Arts and Social Sciences majors, an alignment consistent with disciplinary literacy \parencite{shanahan2008teaching,wineburg1991reading}. 
+
+Future work can test whether cells showing pupil based relief also exhibit tighter scanpaths or more economical forward advance under matched pacing, co registering trajectory features with spatial regularity and regression patterns \parencite{VonderMalsburg2015,GodfroidWinke2019}. A second direction is to manipulate segmentation granularity and signaling explicitly to probe whether early section scaffolding is the locus of the video advantage \parencite{spanjers2012,alpizar2020}. A third is to add comprehension probes aligned to section boundaries to clarify when lower invested effort reflects genuine coordination relief rather than disengagement \parencite{mayer2003,mattys2012speech}.
+
+
+\section{Conclusion}
+This study examined continuous pupil diameter trajectories to reveal the temporal dynamics of cognitive load during extended L2 academic reading. By modeling the complete time course of effort rather than extracting single summary measures, the analysis captured when and how processing demands accumulate and dissipate within passage sections.
+The findings establish two main contributions. First, video presentation produced selective reductions in physiological effort, with reliable advantages observed in simple history and complex science but not in other combinations. These effects appeared early and persisted throughout sections, indicating sustained coordination benefits when narration and visuals were well-aligned. Second, the trajectory-based analysis revealed that disciplinary expertise (Science vs. Arts and Social Sciences majors) interacted with presentation modality to shape engagement dynamics: Science majors showed rising effort trends under video but declining trends under text, whereas Arts and Social Sciences majors showed flat-to-declining patterns in both formats.
+
+Together with Studies 3 and 4, these results demonstrate that linguistic complexity sets the baseline processing constraint, that modality effects are condition-specific rather than universal, and that expertise shapes how effort is allocated over time. The temporal resolution provided by pupillometry complements the spatial patterns revealed by eye-tracking in Study 4 and extends the subjective load and performance outcomes documented in Study 3. For instructional design, the findings support segmented, signaled video presentations when content structure permits audiovisual scaffolding, while recognizing that benefits depend on both material characteristics and learner disciplinary background.

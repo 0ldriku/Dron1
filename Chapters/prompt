@@ -1,0 +1,179 @@
+"""
+你是资深英语学术编辑。目标：把我的草稿改为“完整长文”，不是提纲也不是摘要。and make all the claims clear and well supported by the pdf i uploaed. you should read the reference pdfs i uploaded, and use the prose of the papers to enrich my draft.
+everything should in english, academic tone. no bullet list. all output in code block. latex format. no emph. no textit. 
+
+硬约束：
+- 不减少信息与例子；不得自行删除段落。若建议删，请单独列“建议删除清单”，不要直接删。
+- 字数≥原文的90%，可在论证薄弱处扩到120%。
+- 保留小标题与段落顺序，允许重写句式、增强过渡与论证。
+- 输出为连续段落文本。
+工作流：对我给出的【第X节】先做“清晰化 pass”，随后做“叙事扩写 pass”，最后我确认后再合并全稿、统一风格。
+only do the first para now.
+
+IMPORTANT:DO NOT clustering citations at the end of long sentences.
+below is the first para: 
+
+"""
+
+继续下一节
+"""
+按相同规则处理【第2节】。
+"""
+
+合稿与终检
+
+"""
+把已处理各节合并为一篇完整长文，统一术语与口吻，补跨段过渡。最后给出：
+1) 变更要点清单  2) 可能删减建议（若有） 3) 悬而未决的问题列表。
+"""
+
+
+-----
+# Second step
+
+你是资深英语学术编辑。目标：把我的草稿改为“完整长文”，不是提纲也不是摘要。加入不需要参考文献的普遍性论证。
+ 硬约束： 
+ - 不减少信息与例子；不得自行删除段落。若建议删，请单独列“建议删除清单”，不要直接删。 
+ - 字数≥原文的90%，可在论证薄弱处扩到120%。 
+ - 保留小标题与段落顺序，允许重写句式、增强过渡与论证。 
+ - 输出为连续段落文本。 
+ 工作流：对我给出的【第X节】先做“清晰化 pass”，随后做“叙事扩写 pass”，最后我确认后再合并全稿、统一风格。 only do the first subsection now.
+
+"""
+do same thing for the next subsection
+"""
+
+"""
+把已处理各节合并为一篇完整长文，统一术语与口吻，补跨段过渡。最后给出：
+1) 变更要点清单  2) 可能删减建议（若有） 3) 悬而未决的问题列表。
+"""
+
+"""
+你是资深英语学术编辑。目标：把我的草稿改为“完整长文”，不是提纲也不是摘要。and make all the claims clear and well supported by the pdf i uploaed. you should read the reference pdfs i uploaded, and use the papers to enrich my draft. everything should in english, academic tone. no bullet list. all output in code block. latex format. no emph. no textit. 
+
+硬约束：
+- 不减少信息与例子；不得自行删除段落。若建议删，请单独列“建议删除清单”，不要直接删。
+- 字数≥原文的90%，可在论证薄弱处扩到120%。
+- 保留小标题与段落顺序，允许重写句式、增强过渡与论证。
+- 输出为连续段落文本。
+工作流：对我给出的【第X节】先做“清晰化 pass”，随后做“叙事扩写 pass”，最后我确认后再合并全稿、统一风格。
+
+
+
+IMPORTANT:DO NOT clustering citations at the end of long sentences.
+below is the whole 
+
+"""
+
+
+Act as a senior academic editor. Perform a rhetorical framing and signposting pass to improve reader flow at the macro level.
+
+Objectives:
+1) Lead with a clear Why–What–How–So What arc that motivates the topic, defines scope, outlines approach, and states the payoff.
+2) Strengthen signposting: add or refine topic sentences and closing bridge sentences so each section and subsection clearly orients the reader and connects to the next.
+3) Preserve meaning, evidence, and citations; do not invent sources or new claims. Keep any existing markup or formatting as is (e.g., LaTeX,).
+4) Reduce redundancy and smooth transitions; reorganize paragraphs when needed, but keep the original heading structure unless reordering is necessary for clarity.
+5) Maintain length between 90 and 120 percent of the input. Use cautious causal language (“suggests,” “consistent with”).
+6) Match the author’s style preferences; use commas or semicolons instead of dashes.
+
+Output: Return only the fully revised text in the same format as the input, with no extra commentary.
+IMPORTANT:DO NOT clustering citations at the end of long sentences.
+only do the first para now.
+
+---
+
+
+{
+  cat Chapter01.tex
+  head -1 Chapter02.tex
+  cat chapter02-s1.tex
+  cat chapter02-s2.tex
+  cat chapter02-s3.tex
+  cat chapter02-s4.tex
+  cat chapter02-s5.tex
+  cat chapter02-s6.tex
+} | pbcopy
+
+
+{
+  cat chapter07.tex
+  cat chapter08.tex
+  cat chapter09.tex
+  cat chapter10.tex
+} | pbcopy
+
+- above is the chapter 1-6 of my doctoral thesis. i want you readh through and create the chapter 6, the synthesis of the production experiment. you should make it as the summary of study 1 and 2. base on the results, discussions and the reviews. think harder.
+
+
+{
+  cat Chapter01.tex
+  head -1 Chapter02.tex
+  cat chapter02-s1.tex
+  cat chapter02-s2.tex
+  cat chapter02-s3.tex
+  cat chapter02-s4.tex
+  cat chapter02-s5.tex
+  cat chapter02-s6.tex
+  cat chapter03.tex
+  cat chapter04.tex
+  cat chapter05.tex
+  cat chapter06.tex
+  cat chapter07.tex
+  cat chapter08.tex
+  cat chapter09.tex
+  cat chapter10.tex 
+  cat chapter11.tex
+} | pbcopy
+
+
+---
+i want to make the bullet list for it. the purpose is to make a diagram for the structure of the thesis. 
+
+---
+
+PART I: Overview and framework
+Chapter 1: Introduction and Roadmap 
+
+Chapter 2.1: Definitions, Scope, and History.
+
+Chapter 2.2: Consequences of Cognitive Load.
+
+Chapter 2.3: Factors affecting Cognitive Load.
+
+Chapter 2.4: Verifying Demand with Converging Evidence 
+
+Chapter 2.5: The realtionship between Cognitive Load and Self-Efficacy
+
+Chapter 2.6: Remaining Questions from Prior Research
+
+
+PART II: Production
+Chapter 4: Study 1: How does cognitive load affect L2 learners' CAF trade-offs? 
+
+Chapter 5: Study 2, How are comprehensibility and perceived fluency related and distinct?
+
+How do linguistic features correlate with comprehensibility by task? 
+
+How do linguistic features correlate with perceived fluency by task? 
+
+
+PART III: Comprehension
+Chapter 8: Study 3: How do domain, modality, and complexity affect cognitive load?
+
+How do domain, modality, and complexity affect self-efficacy? 
+
+Chapter 9: Study 4:
+How does expertise affect reading efficiency by domain and complexity? 
+
+How does expertise affect word processing by domain and complexity? 
+
+How does expertise affect spatial attention by domain and complexity?
+
+Chapter 10: Study 5:
+
+
+How do task factors and major affect pupil diameter over time? 
+
+How do task and learner factors affect pupil trajectory shape? 
+
+PART IV: Integration and Conclusions

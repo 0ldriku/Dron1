@@ -1,0 +1,50 @@
+%*******************************************************
+% Thesis Committee
+%*******************************************************
+\pdfbookmark[1]{Thesis Committee}{ThesisCommittee}
+\begingroup
+\let\clearpage\relax
+\let\cleardoublepage\relax
+
+\thispagestyle{plain}
+\phantomsection
+
+\chapter*{Thesis Committee}
+
+\newcommand{\CommitteeHeading}[1]{%
+  {\large\spacedlowsmallcaps{#1}}\par
+  \medskip
+}
+
+\newcommand{\CommitteePerson}[2]{%
+  {\bfseries #1}\par
+  {\itshape #2}\par
+}
+
+\begin{flushright}
+\CommitteeHeading{Thesis Supervisor}
+\CommitteePerson{Reiko Sato}{Professor of Cooking Arts\\%
+Department of Food Science\\%
+Massachusetts Institute of Technology}
+
+\vspace{2\baselineskip}
+
+\CommitteeHeading{Thesis Readers}
+\CommitteePerson{Marie-Antoine Carême}{Professor of Haute Cuisine\\%
+Department of Food Science\\%
+Massachusetts Institute of Technology}
+
+\medskip
+
+\CommitteePerson{Julia Child}{Professor of French Cuisine\\%
+Department of Food Science\\%
+Massachusetts Institute of Technology}
+
+\medskip
+
+\CommitteePerson{Miles Gloriosus}{Professor of Personal Pronouns\\%
+Department of Rhetoric\\%
+Massachusetts Institute of Technology}
+\end{flushright}
+
+\endgroup

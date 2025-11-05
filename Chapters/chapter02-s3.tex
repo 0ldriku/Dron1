@@ -1,0 +1,93 @@
+
+\section{How Tasks Manipulate Cognitive Load}\label{sec:manipulations}
+
+Having reviewed behavioral signatures of cognitive load, this section examines design principles for managing processing demands. It first reviews three complementary approaches from the general literature: managing intrinsic load through sequencing and worked examples (Section~\ref{subsec:intrinsic}), reducing extraneous load through contiguity and modality effects (Section~\ref{subsec:extraneous}), and fostering germane processing through explanation prompts and subgoal labeling (Section~\ref{subsec:productive}). The section then operationalizes these principles for the present thesis, detailing how intrinsic load is manipulated in the specific contexts of L2 production (Section~\ref{subsec:op-production}) and L2 comprehension (Section~\ref{subsec:op-comprehension}). Boundary conditions are made explicit throughout, including expertise reversal and limits imposed by temporal transience.
+
+
+\subsection{Managing Intrinsic Load: Sequencing and Examples}\label{subsec:intrinsic}
+
+Intrinsic load grows with element interactivity, that is, with the number of mutually dependent elements that must be coordinated at the same time by a learner with a given level of prior knowledge \parencite{sweller2010,swellerayres2011}. As knowledge increases and schemas form, many elements are recoded as a single functional unit, which lowers the experienced interactivity of the very same task \parencite{sweller1994}. Instruction manages this demand by altering what must be processed at once while preserving eventual exposure to the full set of relations.
+
+Sequencing proceeds from lower to higher interactivity, isolates elements before integrating them, and schedules relational understanding for a later phase once prerequisites are secure \parencite{VanMerrienboer2004,jong2010}. A complementary progression begins with worked examples, shifts to completion problems, and culminates in independent problem-solving. This progression supports schema construction under high interactivity and yields transfer benefits when examples vary in surface features within a conceptual type \parencite{sweller1985,paas1994_2}.
+
+A robust boundary condition, as established in Section~\ref{subsec:boundaries}, is the expertise-reversal effect. Supports that assist novices can become redundant or disruptive as knowledge grows because they compete with established schema-based processing. This pattern motivates adaptive fading of guidance across acquisition \parencite{kalyuga2007,sweller2010}. Section~\ref{subsec:productive} specifies how to channel freed capacity once supports reduce coordination costs. 
+
+
+
+\subsection{Reducing Extraneous Load: Contiguity, Modality, Transience}\label{subsec:extraneous}
+
+Extraneous load originates in how information is arranged and timed rather than in the conceptual relations to be mastered. Classic demonstrations show that spatial separation of mutually referring text and diagram forces unnecessary mapping and inflates avoidable coordination, the split-attention effect \parencite{ChandlerSweller1992}. In L2 settings, a concrete instance is vocabulary support: providing integrated translations adjacent to the target item removes avoidable search and mapping, whereas sending learners to a separate dictionary increases avoidable coordination \parencite{Sweller2017TESL}. Closely related formats that duplicate information can depress transfer through redundancy costs when learners must reconcile overlapping streams \parencite{Yeung1998}.
+
+Figure~\ref{fig:ctml} presents the cognitive theory of multimedia learning as two processing channels, auditory verbal and visual pictorial, arranged across five stages of representation: physical input to the learner, sensory registration in ears and eyes, attended items in working memory, structured verbal and pictorial models in working memory, and activation of relevant knowledge in long term memory. The working memory stages are capacity limited, the physical input and long term stores are not. Arrows mark the active processes required for learning: selecting words and selecting images from the sensory streams, organizing words and organizing images into coherent models, and integrating those models with prior knowledge. This layout makes the design logic in this subsection concrete: contiguity, modality, redundancy control, and segmentation aim to keep selection, organization, and integration inside working memory limits while aligning the two channels. \textbf{TOOD: redraw the fig}
+
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\textwidth]{Chapters/c1c2fig/fig_ctml.png}
+  \caption[Cognitive theory of multimedia learning]{Two processing channels (auditory verbal, visual pictorial) progress through five representational stages: physical input to the learner, sensory registration in ears and eyes, selected items in working memory, organized verbal and pictorial models in working memory, and integration with prior knowledge in long term memory. Arrows indicate the active processes of selecting words and images, organizing them into coherent models, and integrating with prior knowledge, all under limited working memory capacity. This layout motivates the design levers in this section: spatial and temporal contiguity, nonredundant modality, redundancy control, and segmentation. Adapted from \textcite{mayer2003}.}
+  \label{fig:ctml}
+\end{figure}
+
+
+
+
+Designs that force learners to divide attention across mutually referring sources impose avoidable processing. Spatial and temporal contiguity, for example, placing text next to its diagram or synchronizing narration with a visual change, reduces the need for mental alignment and frees resources for learning \parencite{chandler1991,ginns2006}. Adding on-screen text that repeats a visual or narration can depress transfer because the extra words add processing without adding structure \parencite{mayerbove1996,chandler1991}.
+
+Within this framework, modality functions as a format variable that can either reduce avoidable coordination or inflate it, depending on alignment and redundancy. Using modality to distribute complementary information across channels lowers extraneous load when the streams must be processed together and are not duplicative. In worked-example learning with diagrams, presenting statements auditorily alleviates split attention and improves learning, the modality effect \parencite{mousavi1995}.
+
+Auditory information is transient, however. When verbal streams are long or densely structured, spoken text can overwhelm limited capacity and reverse the benefit. Shortening or chunking narration and coordinating it with visual segments mitigates this transient information cost \parencite{leahy2011,mayer2003}.
+
+Because animations and lectures unfold over time, segmentation and simple pacing control redistribute processing across manageable units. Segmenting dynamic visuals into meaningful parts improves learning for novices, and signaling guides attention to critical elements and relations \parencite{spanjers2012,alpizar2020}. In second language multimedia contexts, captioning and subtitling generally enhance listening comprehension and vocabulary learning, with meta-analytic evidence showing reliable benefits across proficiency bands and test types \parencite{monteroperez2013}. Eye-tracking work indicates that caption use is shaped by script familiarity, content difficulty, and pacing. Co-timing caption units with prosodic and semantic boundaries and providing pause or replay help avoid overload \parencite{winke2013,mayer2003}. These principles guide the modality (text vs.\ video), captioning, and segmentation design choices in Experiment~2.
+
+Evidence from pupillometry complements these format effects and clarifies why differences are often time-localized rather than uniform shifts. In minimal detection paradigms, audiovisual stimuli can produce superadditive pupil dilation relative to unimodal inputs \parencite{Rigato2016}. In continuous speech, acoustic challenge reliably enlarges dilation, and combined difficulties do not necessarily add beyond the acoustic burden, which shows that one stream can dominate allocation \parencite{Kadem2020}. Conflict and integration timing are visible in the pupil, with increases shortly after fixation on mismatching facial cues \parencite{AriasSarah2023}. Under high intelligibility, clearer speech can sometimes elicit slightly larger dilation than casual speech, plausibly reflecting deliberate allocation for maximal accuracy rather than difficulty per se \parencite{Mechtenberg2023}. Together with contiguity and redundancy principles, these results imply that aligned, nonredundant streams can reduce extraneous demand, while misalignment or duplication can raise it, and that resulting differences should appear as localized divergences over time. This expectation motivates trajectory-based analyses in Study~5.
+
+\subsection{Fostering Productive Processing: Explanations and Subgoal Labels}\label{subsec:productive}
+
+Productive processing denotes effort directed at constructing and organizing schemas. Process tracing and training studies agree that principle-based self-explanations during example study are a reliable mechanism that supports deep learning. Prompting learners to explain why a step is warranted and how it instantiates a principle improves transfer beyond gains in recall \parencite{chi1989}. Classroom studies further show that the frequency and quality of spontaneously produced explanations predict problem-solving even when time on task is controlled \parencite{renkl1997}.
+
+At the level of example construction, design syntheses translate these mechanisms into features of examples that elicit constructive activity. Three levers repeatedly improve far transfer. First, pair each worked example with a matched practice item to encourage immediate application. Second, vary examples within a type to promote abstraction. Third, place rationales and operations in close proximity so that learners encounter structure where it is needed \parencite{atkinson2000}.
+
+Subgoal labeling makes the structure explicit at a useful grain size. Grouping steps under compact, purpose-focused labels helps learners form reusable categories and adapt procedures to novel problems. Abstract, principle-oriented labels outperform superficial headings because they cue the organization that experts use when planning solutions \parencite{catrambone1998}.
+
+Prompts should target quality rather than quantity. Learners who articulate principle-to-step links and anticipate upcoming moves gain more than those who merely paraphrase visible actions. High-quality, condition-focused explanations are the proximal predictor of success in longitudinal classroom work \parencite{renkl1997}.
+
+At the lesson level, fading consolidates these gains. Moving from fully worked examples to partially completed solutions and then to independent generation invites a gradual shift from comprehension to production, especially when structural rationales are co-located with operations so that explanation and application proceed together \parencite{atkinson2000,chi1989}. Building on these design principles, the next section specifies how to verify that manipulations produce intended effects.
+
+
+
+\subsection{Intrinsic Load in L2 Production}\label{subsec:op-production}
+
+
+
+Intrinsic load in L2 production is most commonly operationalized through task complexity manipulations. To this end, this thesis draws on Robinson's Triadic Componential Framework, the most influential model for classifying task complexity in Task-Based Language Teaching (TBLT). The framework distinguishes cognitive task complexity, task conditions, and task difficulty \parencite{Robinson2005}. Cognitive task complexity is specified along two sets of dimensions: \textit{resource-directing} dimensions, which relate to developmental complexity, and \textit{resource-dispersing} dimensions, which relate to performative complexity. These dimensions are summarized in Table~\ref{tab:robinson-framework}. Task conditions are the circumstances of performance, for example, time pressure or concurrent activities. Task difficulty refers to perceived demand for particular learners.
+
+\begin{table}[ht]
+\centering
+\footnotesize
+\caption{Cognitive Task Complexity Dimensions in the Triadic Componential Framework (adapted from Robinson, 2005)}
+\label{tab:robinson-framework}
+\begin{tabular}{ll}
+\toprule
+\textbf{Resource-Directing Dimensions} & \textbf{Resource-Dispersing Dimensions} \\
+\textit{(Developmental Complexity)} & \textit{(Performative Complexity)} \\ \hline
++/- Few elements & +/- Planning time \\
++/- Reasoning demands & +/- Prior knowledge \\
++/- Here-and-Now vs. There-and-Then & +/- Single vs. Dual task \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+
+Mapped to CLT, resource-directing manipulations raise intrinsic load as they require coordinating additional essential relations. In contrast, resource-dispersing manipulations (such as reduced planning time or a dual task) primarily increase extraneous load by forcing simultaneous processing or adding competing demands. Similarly, poor instructional formats add extraneous load. 
+
+In this thesis, designed differences target intrinsic load via element interactivity while holding extraneous design factors constant. Verification proceeds with a minimal, modality-appropriate set: in production, immediate effort ratings paired with a light secondary task. These principles motivate the element-interactivity manipulation in Experiment~1.
+
+
+
+\subsection{Intrinsic Load in L2 Comprehension}\label{subsec:op-comprehension}
+
+Intrinsic load during comprehension arises primarily from the inherent complexity of the materials being processed \parencite{sweller2010}. Unlike production tasks, where intrinsic load is tied to conceptual and relational demands placed on the performer, comprehension load stems from the linguistic input itself. In domains such as L2 reading and multimedia learning, this means that intrinsic load is commonly operationalized by manipulating the element interactivity within the linguistic input itself. Element interactivity in language refers to the number of linguistic elements (e.g., words, phrases, clauses) and the relationships between them (syntactic dependencies, semantic links, anaphoric references) that must be simultaneously processed in working memory to achieve understanding \parencite{sweller2010}.
+
+A principal determinant of element interactivity in linguistic material is its linguistic complexity. At a basic level, simple sentences with canonical word order and high-frequency vocabulary involve relatively few interacting elements, thus imposing lower intrinsic load. Conversely, increasing linguistic complexity, such as through the use of syntactically complex structures like embedded clauses, non-canonical word orders, or long-distance dependencies, or through lexically challenging features like low-frequency or abstract words, increases the number of elements and the complexity of their interrelationships that must be coordinated in working memory at any given moment \parencite{just1992,Futrell2020}. Successfully parsing complex syntax requires not only performing symbolic computations but also storing intermediate products (e.g., representations of earlier words or interrupted clauses) while processing subsequent input. As syntactic complexity increases, these concurrent storage and computational demands can strain or exceed the available working memory capacity, leading to processing slowdowns or comprehension failures \parencite{just1992}. Similarly, processing long-distance dependencies, where syntactically related words are separated by intervening material, is argued to incur greater processing effort due to the increased demands on memory for retrieving the representation of the earlier element when the later element is encountered \parencite{Futrell2020}. Recent work specifically confirms that various linguistic complexity indices, spanning lexical, syntactic, and discoursal levels, predict L2 learners' processing effort as captured by eye-movement measures, often outperforming traditional readability formulas \parencite{zhang2024modelling}. Therefore, Experiment 2 of this thesis adopts linguistic complexity (specifically, simple vs. complex syntax) as the primary manipulation of intrinsic load within the academic learning materials. This allows for a targeted investigation into how the inherent difficulty of the language itself impacts L2 learners' subjective cognitive load, self-efficacy, and ultimate comprehension accuracy. 

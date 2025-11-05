@@ -1,0 +1,445 @@
+%************************************************
+\chapter{Experiment 2 Methods (Studies 3, 4, and 5)}\label{ch:exp2-methods}
+%************************************************
+
+
+
+\section{Introduction}
+
+Experiment 2 shifts the focus from production to comprehension to address the academic learning research questions (RQ3, RQ4, and RQ5). Following the specific rationale developed in \autoref{subsec:op-comprehension}, intrinsic load is operationalized by manipulating linguistic complexity (simple vs. complex syntax). The design also varies presentation format (text vs. video) to test modality effects (\autoref{subsec:extraneous}) and contrasts content domain (history vs. science) against learners' academic major to test for expertise reversal effects (Section~\ref{subsec:boundaries}).
+
+Verification of the load manipulation, guided by \autoref{sec:verification}, is operationalized using both objective pupillometry indices and subjective ratings. Pupillometry metrics (mean pupil diameter change and range dilation) provide physiological confirmation of processing demands across the entire task, while subjective ratings capture participants' experienced cognitive load following each content section. Participants also reported their self-efficacy after each section. In a methodological departure from Experiment 1, a secondary task was intentionally omitted. The inclusion of a dual-task paradigm would, by design, impose a competing, extraneous processing demand, compelling a division of attention. This would confound the measurement of processing effort originating solely from the comprehension materials. Beyond validation, eye-tracking and pupillometry serve as the primary dependent variables for the process-oriented analyses in Study 4 and Study 5. Interpretations of the main outcomes are therefore contingent upon both physiological and subjective measures confirming the efficacy of the linguistic complexity manipulation.
+
+This common experimental design provides the data for three distinct studies. Study 3 analyzes the main and interactive effects of linguistic complexity, domain, and modality on subjective load, self-efficacy, and comprehension accuracy. Study 4 uses temporal and spatial eye-movement indices in the text modality to characterize how readers adjust their processing, testing whether domain expertise moderates the impact of linguistic complexity. Study 5 models continuous pupil dilation dynamics across both text and video as a time-resolved index of moment-to-moment effort. The remainder of this chapter details the participants, experimental design, materials and tasks, apparatus, instruments, procedure, and verification check.
+
+
+\section{Participants}
+
+
+
+This study involved 36 participants (25 female and 11 male), recruited from a university population in Japan. All were Chinese international students learning Japanese. The participants' length of stay in Japan averaged 3.33 years ($SD = 2.78$, $range = 0.20\text{--}12.00$), and their majors were categorized as science ($n=19$) or arts/social sciences ($n=17$). All had passed the Japanese-Language Proficiency Test (JLPT) with N1 (highest level; $n=26$), N2 (second-highest level; $n=9$), or N3 (third-highest level; $n=1$). Furthermore, the participants were distributed across different academic levels: four undergraduates (one in year 2 and three in year 4), 19 master's students (15 in year 1 and four in year 2), and 13 doctoral students (four in year 1, six in year 2, and three in year 3). All participants provided informed consent, and the study was approved by the Human Subjects Research Ethics Review Committee of the Institute of Science Tokyo (Approval No. A24166).
+
+
+\section{Materials}
+
+\subsection{Topic Selection and Task Flow}
+
+We selected four topics as the learning materials: two from the domain of science (public and private key cryptography, hereafter ``science 1,'' and k-anonymity, hereafter ``science 2'') and two from history (Irish Potato Famine, hereafter ``history 1,'' and the defection of Viktor Belenko, hereafter ``history 2''). The participants reported no prior detailed knowledge of the specific subjects covered. Each learning task consisted of an introduction phase followed by three content sections that presented the core educational material about the topic, including key concepts, mechanisms, and relevant examples. Upon the completion of all content sections, the participants completed three corresponding question sections that were administered sequentially, mirroring the presentation order of the content sections. The flow within each learning task is shown in Figure \ref{fig:taskflow}. In every question section, the participants answered three multiple-choice questions, each requiring the selection of one correct answer from four options. These questions were designed to assess three distinct cognitive processes: recall (retrieving factual information), reasoning (making logical inferences), and comprehension (understanding conceptual relationships). The order of presentation of questions in each question section was randomized for each participant. All materials, including the learning tasks, instructions, and questions were presented in Japanese.
+
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{Chapters/study3fig/s3f1.pdf}
+  \caption{Flowchart of the structure of each learning task.}
+  \label{fig:taskflow}
+\end{figure*}
+
+
+\subsection{Material Design and Presentation Format}
+
+
+
+
+%-revision---reviewer 2 comment 3, reviewer 1 method comment 3
+Word counts for all learning tasks and durations for video-based tasks are detailed in Table \ref{tab:word_count_duration}. The average narration speed across all video passages was approximately 310 words per minute, a rate consistent with Japanese news broadcasts. All narration audio was normalized to ensure consistent volume levels. Each video section was presented at $1920 \times 1080$ resolution as a complete, continuous unit on a single screen. Both text and video modalities shared an identical visual layout. A static, topic-relevant figure was displayed on the left side of the screen in both conditions. The right side differed depending on modality: for the text-based learning tasks, the corresponding text appeared on the right side of this figure, with the entire text for each section presented simultaneously on a single screen without requiring scrolling; for the video-based learning tasks, the right side featured a video of a talking head delivering the narration. A standard video player interface was presented at the bottom of the screen, featuring a timeline progress bar for unrestricted navigation and a central cluster of playback controls (e.g., play/pause, fast-forward, rewind). To isolate the modality effect and avoid confounding from redundant on-screen text, all videos were presented without captions.
+
+
+\begin{table}[htbp]
+\centering
+\begin{threeparttable}
+\caption{Word counts and durations by task section.}
+\label{tab:word_count_duration}
+\setlength{\tabcolsep}{2pt} % Reduced column spacing
+\footnotesize % Reduced font size for the table
+\begin{tabular}{
+    c % Topic
+    c % Modality
+    c % Linguistic Complexity
+    S[table-format=3.0] % Section 1 Words
+    S[table-format=3.0] % Section 2 Words  
+    S[table-format=3.0] % Section 3 Words
+    S[table-format=1.2] % Section 1 Duration
+    S[table-format=1.2] % Section 2 Duration
+    S[table-format=1.2] % Section 3 Duration
+}
+\toprule
+\textsc{Topic} & \textsc{Modality} & \textsc{LC} & \multicolumn{3}{c}{\textsc{Word Count}} & \multicolumn{3}{c}{\textsc{Duration (min)}} \\
+\cmidrule{4-6} \cmidrule{7-9}
+{} & {} & {} & {Sec. 1} & {Sec. 2} & {Sec. 3} & {Sec. 1} & {Sec. 2} & {Sec. 3} \\
+\midrule
+History 1 & Video & Simple    & 294 & 345 & 395 & 0.95 & 1.20 & 1.28 \\
+History 1 & Video & Complex   & 661 & 693 & 706 & 2.02 & 2.23 & 2.18 \\
+History 2 & Text  & Simple    & 409 & 367 & 434 & {--} & {--} & {--} \\
+History 2 & Text  & Complex   & 717 & 704 & 788 & {--} & {--} & {--} \\
+Science 1 & Video & Simple    & 330 & 395 & 386 & 1.17 & 1.30 & 1.35 \\
+Science 1 & Video & Complex   & 600 & 697 & 762 & 1.83 & 2.13 & 2.43 \\
+Science 2 & Text  & Simple    & 359 & 380 & 449 & {--} & {--} & {--} \\
+Science 2 & Text  & Complex   & 642 & 652 & 778 & {--} & {--} & {--} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Note.} Word counts and durations for each of the three sections per task. Sec.: Section. Duration shows time per section for video tasks; dashes indicate text-based tasks.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%------
+
+\subsection{Instruments}
+
+
+We collected the participants' demographic information, including their academic major, gender, and length of stay in Japan. Japanese self-efficacy was assessed using an 11-item scale adapted from the Questionnaire of English Self-Efficacy \parencite{wang2013self}. In the present study, the scale demonstrated excellent internal consistency ($\alpha = .94$). In line with the focus of our study, only items targeting reading and listening were retained. Cognitive load was assessed using a scale adapted from \parencite{paas_training_1992}, which asked, ``How much mental effort did you invest in the preceding section?'' (1 = extremely low, 7 = extremely high). Self-efficacy was also assessed after each content section using a scale adapted from \parencite{williams_using_2016}, which asked, ``How confident are you that you will understand the next section?'' (1 = not at all confident, 7 = extremely confident). Both cognitive load and self-efficacy were assessed after completing each of the three content sections within a learning task.
+
+To confirm that our manipulation of linguistic complexity was perceived by the participants as intended, we assessed perceived linguistic complexity after each learning task. The participants judged the overall linguistic complexity of the entire learning material by answering the following question: ``How complex did you find the language of the entire learning material you just studied?'' (1 = extremely simple, 7 = extremely complex). All scales and questionnaires were presented in Chinese, the participants' first language, to minimize additional cognitive load, particularly for measures collected during the experimental tasks.
+
+
+
+\subsection{Linguistic Complexity Manipulation}
+
+
+
+
+The manipulation of linguistic complexity mainly followed established approaches \parencite{crossley_large-scaled_2023, zhang_contribution_2025}. However, our experiment focused exclusively on syntactic complexity, keeping lexical difficulty stable to preserve access to learning content. 
+%-revision---- method comment 2
+Whereas high syntactic complexity presents a processing challenge that taxes working memory, while unknown key vocabulary can act as a more fundamental lexical barrier, halting the learning process entirely and risking task disengagement \parencite{schwonke_metacognitive_2015}.
+%----
+Source texts on the four topics were edited into paired versions: a simple version with shorter sentences and shallower embedding and a complex version with more elaborate syntax. Topic coverage, paragraph breaks, and surface vocabulary were left unchanged between versions.
+
+The syntactic complexity manipulation was characterized using multiple metrics, detailed in Table \ref{tab:metrics}. Sentence length, expressed as the mean number of tokens per sentence, averaged 46.07--57.23 and 24.44--32.35 tokens in the complex and simple versions, respectively ($SD = 16.63\text{--}23.11$ versus $7.91\text{--}15.81$; maximum sentence length = 94--100 versus 43--87 tokens). Parse-tree height, the depth of the dependency tree from the root to the deepest leaf, ranged from 7.04 to 8.82 nodes in the complex versions and 4.15 to 5.61 nodes in the simple versions. Mean dependency distance, the average linear separation in tokens between syntactically linked heads and dependents, ranged from 2.99 to 3.27 tokens in the complex versions and 2.62 to 2.91 tokens in the simple versions. Constituent density followed the same pattern: noun phrases per sentence ranged from 12.29 to 14.23 in the complex versions and 7.04 to 10.30 in the simple versions, and particle--verb frames increased from 3--13 in the simple versions to 25--38 in the complex versions.
+
+Lexical complexity metrics remained stable (Table~\ref{tab:metrics}). Document-level root type--token ratios (a measure of lexical diversity calculated by dividing unique lemmatized word types by the total lemmatized tokens, with the necessary tokenization, lemmatization, and part-of-speech tagging), calculated for noun, verb, and prepositional phrase heads, varied by no more than 0.02 across versions, and the proportions of high-, mid-, and low-frequency tokens shifted by at most 3.47 percentage points.
+
+All indices were computed using the GiNZA Japanese natural language processing library \parencite{ginza}.
+
+\begin{table*}[htbp]
+  \centering
+  \setlength{\tabcolsep}{1.5pt} % default is 6pt
+
+  \caption{Syntactic and lexical complexity metrics by linguistic complexity level across four learning topics.}
+  \label{tab:metrics}
+  \footnotesize
+  \setlength{\tabcolsep}{2pt}
+  \begin{threeparttable}
+    % Use S columns defined with Mean(SD) format
+    % We need to find the max format for each column across the *whole* table
+    % Col 1 (Hist 1 Sim, Sci 1 Sim): Max is 2.2(2.2)
+    % Col 2 (Hist 1 Com, Sci 1 Com): Max is 3.2(2.2) (due to '100')
+    % Col 3 (Hist 2 Sim, Sci 2 Sim): Max is 2.2(2.2) (due to 15.81)
+    % Col 4 (Hist 2 Com, Sci 2 Com): Max is 2.2(2.2)
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}
+      l@{\extracolsep{\fill}} 
+      S[table-format=2.2(2.2)]
+      S[table-format=3.2(2.2)]
+      S[table-format=2.2(2.2)]
+      S[table-format=2.2(2.2)]
+    }
+      \toprule
+      % History 1 and 2
+      & \multicolumn{2}{c}{\textsc{History 1}}
+      & \multicolumn{2}{c}{\textsc{History 2}} \\
+      \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+      % These are already \multicolumn, so they override 'S' and center
+      & \multicolumn{1}{c}{\textsc{Simple}} & \multicolumn{1}{c}{\textsc{Complex}}
+      & \multicolumn{1}{c}{\textsc{Simple}} & \multicolumn{1}{c}{\textsc{Complex}} \\
+    \midrule
+    %------ Syntactic block ------%
+    \addlinespace
+    \multicolumn{5}{@{}l}{\textit{Syntactic Complexity}} \\
+    Sentences (\emph{N})                  & 27   & 28   & 30   & 29   \\
+    Sentence length (tokens)              & 24.44 (12.52) & 46.07 (22.36) & 24.77 (9.06) & 47.83 (23.11) \\
+    Max sentence length                   & 54   & 100  & 43   & 95   \\
+    Parse-tree height                     & 4.15 (2.03) & 7.04 (3.01) & 4.43 (1.57) & 7.34 (3.14) \\
+    Mean dependency distance              & 2.62 (0.59) & 3.27 (0.88) & 2.82 (0.40) & 3.19 (0.50) \\
+    NPs per sentence                      & 7.04 (3.80) & 12.29 (6.59) & 8.37 (4.38) & 14.14 (7.12) \\
+    VPs per sentence                      & 6.70 (4.41) & 13.57 (7.69) & 6.53 (3.26) & 13.83 (7.59) \\
+    PPs per sentence                      & 5.74 (3.32) & 10.18 (6.16) & 5.23 (2.82) & 10.55 (5.36) \\
+    Classifier--noun pairs (\emph{count})    &  7   &  5   & 12   & 13   \\
+    Particle--verb frames (\emph{count})      &  3   & 25   &  4   & 27   \\
+    %------ Lexical block ------%
+    \addlinespace
+    \multicolumn{5}{@{}l}{\textit{Lexical Complexity}} \\
+    High-frequency tokens (\%) & 17.74 & 14.45 & 17.01 & 13.90 \\
+    Mid-frequency tokens (\%)  & 22.91 & 26.38 & 19.50 & 21.07 \\
+    Low-frequency tokens (\%)  &  3.92 &  5.77 &  5.94 &  7.75 \\
+    Root TTR (NP heads)        &  0.06 &  0.04 &  0.05 &  0.04 \\
+    Root TTR (VP heads)        &  0.04 &  0.03 &  0.04 &  0.03 \\
+    Root TTR (PP heads)        &  0.02 &  0.01 &  0.02 &  0.01 \\
+    \midrule
+    %------ Science 1 and 2 ------%
+    & \multicolumn{2}{c}{\textsc{Science 1}}
+      & \multicolumn{2}{c}{\textsc{Science 2}} \\
+      \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+      & \multicolumn{1}{c}{\textsc{Simple}} & \multicolumn{1}{c}{\textsc{Complex}}
+      & \multicolumn{1}{c}{\textsc{Simple}} & \multicolumn{1}{c}{\textsc{Complex}} \\
+    \midrule
+    %------ Syntactic block ------%
+    \addlinespace
+    \multicolumn{5}{@{}l}{\textit{Syntactic Complexity}} \\
+    Sentences (\emph{N})                  & 26   & 22   & 23   & 25   \\
+    Sentence length (tokens)              & 26.31 (7.91) & 57.23 (16.63) & 32.35 (15.81) & 50.32 (19.15) \\
+    Max sentence length                   & 45   & 94   & 87   & 99   \\
+    Parse-tree height                     & 5.23 (1.34) & 8.82 (2.30) & 5.61 (1.83) & 8.76 (2.85) \\
+    Mean dependency distance              & 2.90 (0.62) & 2.99 (0.76) & 2.91 (0.51) & 3.12 (0.66) \\
+    NPs per sentence                      & 7.27 (3.18) & 14.23 (4.68) & 10.30 (5.51) & 14.12 (5.93) \\
+    VPs per sentence                      & 7.38 (3.07) & 17.82 (6.95) & 8.26 (4.01) & 14.64 (6.61) \\
+    PPs per sentence                      & 5.88 (1.93) & 12.73 (4.45) & 7.13 (3.92) & 11.88 (5.63) \\
+    Classifier--noun pairs (\emph{count})    &  4   &  7   &  2   &  3   \\
+    Particle--verb frames (\emph{count})      & 13   & 33   & 10   & 38   \\
+    %------ Lexical block ------%
+    \addlinespace
+    \multicolumn{5}{@{}l}{\textit{Lexical Complexity}} \\
+    High-frequency tokens (\%) & 14.24 & 13.40 & 14.37 & 16.80 \\
+    Mid-frequency tokens (\%)  & 26.36 & 27.05 & 27.75 & 29.30 \\
+    Low-frequency tokens (\%)  &  8.94 &  8.77 &  4.46 &  4.46 \\
+    Root TTR (NP heads)        &  0.05 &  0.04 &  0.04 &  0.04 \\
+    Root TTR (VP heads)        &  0.04 &  0.02 &  0.04 &  0.03 \\
+    Root TTR (PP heads)        &  0.02 &  0.01 &  0.02 &  0.01 \\
+    \bottomrule
+    \end{tabular*}
+    \begin{tablenotes}[flushleft]
+      \footnotesize
+      \item \emph{Note.} NP: Noun Phrase; VP: Verb Phrase; PP: Prepositional Phrase; TTR: Type--Token Ratio. Values in parentheses represent standard deviations. Most metrics show means across sentences, except counts and maximum values.
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table*}
+
+
+
+
+
+
+
+
+\section{Apparatus}
+Eye movements and binocular pupil diameter were recorded using a Gazepoint GP3 eye-tracker at 60 Hz during the experimental sessions. Participants read texts presented on a 19-inch 1920$\times$1080 pixel display while their gaze was continuously monitored. A nine-point calibration process was performed before the reading task to ensure accurate eye-tracking.
+
+
+\section{Procedure}
+
+\begin{table*}[!ht]
+  \centering
+  \caption{Task order and factor combinations.}
+  \label{tab:task_orders}
+  \footnotesize
+  \setlength{\tabcolsep}{2pt}
+  \begin{threeparttable}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}c *{2}{ccc}@{}}
+      \toprule
+      \textsc{Task}
+        & \multicolumn{3}{c}{\textsc{Sequence 1}}
+        & \multicolumn{3}{c}{\textsc{Sequence 2}} \\
+      \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+        & \textsc{Modality} & \textsc{LC} & \textsc{Topic}  & \textsc{Modality} & \textsc{LC} & \textsc{Topic} \\
+      \midrule
+      1
+        & Video & Simple  & Science 1
+        & Text  & Complex & Science 2 \\
+      2
+        & Video & Complex & History 1
+        & Text  & Simple  & History 2 \\
+      \hline
+    \end{tabular*}
+    
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}c *{2}{ccc}@{}}
+      
+      \textsc{Task}
+        & \multicolumn{3}{c}{\textsc{Sequence 3}}
+        & \multicolumn{3}{c}{\textsc{Sequence 4}} \\
+      \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+        & \textsc{Modality} & \textsc{LC} & \textsc{Topic}  & \textsc{Modality} & \textsc{LC} & \textsc{Topic} \\
+      \midrule
+      3
+        & Video & Simple  & History 1
+        & Text  & Complex & History 2 \\
+      4
+        & Video & Complex & Science 1
+        & Text  & Simple  & Science 2 \\
+      \bottomrule
+    \end{tabular*}
+    \begin{tablenotes}[flushleft]
+      \footnotesize
+      \item \textit{Note.} LC: Linguistic Complexity.
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table*}
+
+
+The participants completed the study individually in a quiet laboratory setting during a single 90-min session. The experiment was conducted on a personal computer; the participants viewed the learning materials on-screen and provided responses using a mouse. To counterbalance both modality and serial position without exposing the participants to redundant content, four fixed task sequences were created (Table~\ref{tab:task_orders}). Each sequence blocked modality (two consecutive videos followed by two consecutive texts, or vice versa) and guaranteed that every participant encountered one simple and one complex learning task in each modality.
+
+
+The participants entered the experimental session only after giving informed consent and completing both the demographic questionnaire and the Japanese self-efficacy questionnaire. They were assigned to one of four task sequences.
+%revision- reviewer 2 comment method
+To distribute participants across the four counterbalanced task sequences, we used block randomization. Each participant was assigned a random, unique ID from a pool of 1--40 upon enrollment. Participants were then systematically assigned to sequences based on their sorted ID numbers (e.g., IDs 1--5 to sequence 1, 6--10 to sequence 2, etc., cycling through all four sequences).
+%---
+A brief practice demonstration preceded each modality block, and the participants took a 5-min break between the two modality blocks. Subsequently, they completed the four learning tasks. 
+%revision--reviewer 2 comment 3
+Engagement with each content section was self-paced, with participants controlling the timing and progression. Once they pressed the ``Next'' button (located on the bottom right of the screen) to signal the completion of a content section and proceeded to the subsequent ratings, they could not return to the previous section. The time spent before advancing was unlimited. For text passages, participants could freely read and re-read the on-screen material. For video passages, the video began playing automatically upon section start, but participants had full control (pause, rewind, fast-forward). Table \ref{tab:task_times} reports the mean durations of each learning task. 
+%revision--- method comment 4
+All materials were presented with PsychoPy (Version 2024.2.4; \parencite{peirce2019}), which also logged video control actions and responses.
+%----
+%-revision- method comment 4 
+
+\begin{table*}[!ht]
+  \centering
+  \caption{Average time spent on learning tasks.}
+  \label{tab:task_times}
+  \footnotesize
+  \setlength{\tabcolsep}{3.5pt}
+  \begin{threeparttable}
+    \begin{tabular}{cc*{4}{c}cc}
+      \toprule
+      \textsc{Topic} & \textsc{Modality} & \textsc{LC} & \textsc{Section 1} & \textsc{Section 2} & \textsc{Section 3} & \textsc{Total Time} & \textit{n} \\
+      \midrule
+      History 1 & Video & Simple & $1.40 (0.53)$ & $1.59 (0.42)$ & $1.75 (0.72)$ & $5.71 (1.51)$ & $16$ \\
+      History 1 & Video & Complex & $2.58 (0.61)$ & $2.91 (0.65)$ & $2.70 (0.72)$ & $9.03 (1.88)$ & $20$ \\
+      History 2 & Text & Simple & $1.46 (0.56)$ & $1.36 (0.55)$ & $1.36 (0.54)$ & $4.90 (1.66)$ & $20$ \\
+      History 2 & Text & Complex & $2.19 (0.76)$ & $2.14 (0.90)$ & $1.96 (0.87)$ & $7.05 (2.57)$ & $16$ \\
+      Science 1 & Video & Simple & $1.54 (0.57)$ & $1.57 (0.33)$ & $1.76 (0.43)$ & $5.77 (1.40)$ & $20$ \\
+      Science 1 & Video & Complex & $3.17 (1.89)$ & $2.51 (0.52)$ & $3.08 (0.87)$ & $9.81 (3.38)$ & $16$ \\
+      Science 2 & Text & Simple & $1.47 (0.77)$ & $1.51 (0.81)$ & $1.56 (0.70)$ & $5.27 (2.24)$ & $16$ \\
+      Science 2 & Text & Complex & $2.14 (0.93)$ & $2.37 (1.13)$ & $2.25 (0.79)$ & $7.58 (2.86)$ & $20$ \\
+      \bottomrule
+    \end{tabular}
+    \begin{tablenotes}[flushleft]
+      \footnotesize
+      \item \textit{Note.} LC = Linguistic Complexity. Values represent means with standard deviations in parentheses. Total time in minutes across all phases.
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table*}
+%----
+
+
+\section{Validation of Linguistic Complexity Manipulation}
+
+\subsection{Subjective Validation: Perceived Linguistic Complexity}
+
+We employed a linear mixed-effects model to assess the manipulation of linguistic complexity. This model analyzed perceived linguistic complexity ratings as the dependent variable, with domain, modality, and linguistic complexity factors as fixed effects, including all two- and three-way interactions. A random intercept by participant was included to account for individual variability. The analysis confirmed the manipulation: a significant main effect of linguistic complexity was found ($p=.010$; see Table~\ref{tab:anova_rq0}). Post hoc comparisons indicated that complex passages were perceived as more complex than simple passages ($d=0.44$). In addition, modality had a significant main effect ($p=.014$). Post hoc comparisons indicated that the participants perceived video passages as more complex than text passages ($d=0.42$). The effect of domain was marginal ($p=.063$). No interactions were significant. Fixed effects explained 12.9\% of the variance in perceived complexity ($R^{2}_{\mathrm{m}} = 0.13$); the full model, including random effects, explained 29.1\% ($R^{2}_{\mathrm{c}} = 0.29$). Collectively, these findings indicate that the manipulation of linguistic complexity was perceived by the participants as intended.
+
+
+
+\begin{table}[htbp]
+\centering
+\begin{threeparttable}
+\caption{Summary of the perceived linguistic complexity model.}
+\label{tab:anova_rq0}
+\setlength{\tabcolsep}{3pt} % Reduced column spacing from 4pt to 3pt
+\footnotesize % Font size is unchanged
+\sisetup{
+  input-signs = {-},
+  table-align-text-pre = false,
+  table-align-text-post = false
+}
+\begin{tabular}{
+  l % Effects
+  S[table-format=2.2]  % SS
+  S[table-format=2.2]  % MS
+  S[table-format=1.0]  % df_n
+  S[table-format=3.0]  % df_d
+  S[table-format=1.2]  % F
+  S[table-format=<1.3,table-comparator=true] % p-value
+}
+\toprule
+% --- Headers are now abbreviated to save space ---
+& {\textit{SS}} & {\textit{MS}} & {\textit{$df_n$}} & {\textit{$df_d$}} & {\textit{F}} & {$\textit{p}$} \\
+\midrule
+% Main effects
+Domain & 5.25 & 5.25 & 1 & 102 & 3.53 & {$.063$} \\
+Modality& 9.23 & 9.23 & 1 & 102 & 6.20 & {$.014$} \\
+LC & 10.39 & 10.39 & 1 & 102 & 6.98 & {$.010$} \\
+\addlinespace
+% Two-way interactions
+Domain:Modality & 0.00 & 0.00 & 1 & 102 & 0.00 & {$.964$} \\
+Domain:LC& 0.06 & 0.06 & 1 & 102 & 0.04 & {$.843$} \\
+Modality:LC& 3.98 & 3.98 & 1 & 102 & 2.67 & {$.105$} \\
+\addlinespace
+% Three-way interaction
+Domain:LC:Modality & 5.29 & 5.29 & 1 & 34 & 3.56 & {$.068$} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+% --- Note is updated with definitions for abbreviations ---
+\item \textit{Note.} LC: Linguistic Complexity; SS: Sum of Squares; MS: Mean Square; $df_n$: numerator degrees of freedom; $df_d$: denominator degrees of freedom.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+
+
+\subsection{Objective Validation: Pupillometry}
+
+
+To confirm that the linguistic complexity manipulation operated as intended, we examined two standardized pupillometry metrics. Mean Pupil Diameter Change (MPDC), calculated as the average pupil diameter across the entire task period relative to baseline, serves as an index of sustained cognitive engagement, with higher values indicating greater sustained processing demands. Range dilation, computed as the difference between maximum and minimum pupil diameter during the task, captures processing variability, with larger values reflecting more dynamic fluctuations in cognitive resource allocation. Table~\ref{tab:manipulation_check_pupillometry} reports descriptive statistics by complexity condition.
+
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Descriptive Statistics for Pupillometry Metrics by Linguistic Complexity Condition}
+\label{tab:manipulation_check_pupillometry}
+\begin{threeparttable}
+% Define 'l' column and 'S' columns with formats
+\begin{tabular}{l
+                S[table-format=3.0]
+                S[table-format=-0.2]
+                S[table-format=1.2]
+                S[table-format=-0.2]
+                S[table-format=1.2]}
+\toprule
+ & & \multicolumn{2}{c}{\textsc{MPDC}} & \multicolumn{2}{c}{\textsc{Range Dilation}} \\
+\cmidrule(lr){3-4} \cmidrule(lr){5-6}
+% Wrap S-column headers in {}
+Condition & {$N$} & {$M$} & {$SD$} & {$M$} & {$SD$} \\
+\midrule
+% No $ needed on numbers
+Simple    & 200 & 0.10  & 1.01 & -0.19 & 1.03 \\
+Complex   & 204 & -0.10 & 0.99 & 0.18  & 0.93 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para,flushleft]
+\small
+\footnotesize
+\item \textit{Note.} MPDC = Mean Pupil Diameter Change. All values are standardized (scaled). $N$ = number of observations.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+
+For each metric we fitted a linear mixed-effects model in R (lme4). Fixed effects were linguistic complexity (simple vs. complex), content domain (science vs. history), and section (1–3). Random effects were participant-level intercepts and random slopes for domain, specified as (1 + domain | participant id).  Type III tests of fixed effects were conducted using Satterthwaite approximation for degrees of freedom.
+
+Results revealed a significant main effect of linguistic complexity on both pupillometry metrics (see Table~\ref{tab:manipulation_check_anova}). For MPDC, the linguistic complexity effect was significant, $F(1, 329.07) = 9.25$, $p = .003$, with simple passages producing higher sustained pupil dilation (simple: $M = 0.10$, $SD = 1.01$; complex: $M = -0.10$, $SD = 0.99$), $\beta = 0.187$, 95\% CI [0.07, 0.31], $d = 0.20$. For range dilation, the linguistic complexity effect was also significant, $F(1, 366.01) = 17.43$, $p < .001$, with complex passages producing larger pupil size fluctuations (complex: $M = 0.18$, $SD = 0.93$; simple: $M = -0.19$, $SD = 1.03$), $\beta = -0.367$, 95\% CI [$-0.54$, $-0.20$], $d = -0.37$. Both effects survived Bonferroni correction ($p < .025$) and were confirmed by Welch's $t$-tests (MPDC: $t = 2.05$, $p = .041$; range dilation: $t = -3.76$, $p < .001$). The range dilation model showed a boundary (singular) fit due to an overparameterized random effects structure, although the complexity effect remained highly significant across both mixed-effects and simple $t$-test approaches. No significant effects emerged for content domain (both $p > .75$) or section (both $p > .46$). 
+
+The validation was successfully confirmed by the range dilation metric, which captures processing variability. As predicted, complex passages produced significantly larger pupil size fluctuations, indicating greater dynamic shifts in cognitive resource allocation. This aligns with the subjective validation, confirming the complex passages imposed a higher load. However, the MPDC pattern showed a small but reliable simple-over-complex difference. As discussed in the literature review (see \autoref{subsec:comp-sigs}), this seemingly contradictory pattern (where lower mean dilation occurs in a more demanding condition) is consistent with an inverted U-shaped effort-regulation response or a disengagement/overload effect, rather than indicating that the complex passages were easier \parencites{zekveld2018pupil,herrmann2024pupil,minassian2004pupillary,vanderwel2018pupil}. Overall, the range dilation findings still provide the clearest validation that the linguistic-complexity manipulation operated as intended.
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Type III Tests of Fixed Effects for Pupillometry Metrics}
+\label{tab:manipulation_check_anova}
+% Define 'l' column and 'S' columns with formats
+\begin{tabular}{l
+                S[table-format=4.0]
+                S[table-format=2.2]
+                c
+                S[table-format=4.0]
+                S[table-format=2.2]
+                c}
+\toprule
+ & \multicolumn{3}{c}{\textsc{MPDC}} & \multicolumn{3}{c}{\textsc{Range Dilation}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+Effect & {$df$} & {$F$} & {$p$} & {$df$} & {$F$} & {$p$} \\
+\midrule
+Complexity      & 1329 & 9.25 & $\phantom{<}.003$ & 1366 & 17.43 & $<.001$ \\
+Domain          & 128  & 0.10 & $\phantom{<}.750$ & 186  & 0.03 & $\phantom{<}.871$ \\
+Section         & 2328 & 0.76 & $\phantom{<}.467$ & 2366 & 0.69 & $\phantom{<}.505$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{TODO: add the descriptive table of linguistic complexity}
+
+

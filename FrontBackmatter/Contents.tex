@@ -1,0 +1,106 @@
+%*******************************************************
+% Table of Contents
+%*******************************************************
+\pagestyle{scrheadings}
+%\phantomsection
+\pdfbookmark[1]{\contentsname}{tableofcontents}
+\setcounter{tocdepth}{2} % <-- 2 includes up to subsections in the ToC
+\setcounter{secnumdepth}{3} % <-- 3 numbers up to subsubsections
+\manualmark
+\markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}
+\tableofcontents
+\automark[section]{chapter}
+\renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
+\renewcommand{\sectionmark}[1]{\markright{\textsc{\thesection}\enspace\spacedlowsmallcaps{#1}}}
+%*******************************************************
+% List of Figures and of the Tables
+%*******************************************************
+\clearpage
+% \pagestyle{empty} % Uncomment this line if your lists should not have any headlines with section name and page number
+\begingroup
+    \let\clearpage\relax
+    \let\cleardoublepage\relax
+    %*******************************************************
+    % List of Figures
+    %*******************************************************
+    %\phantomsection
+    %\addcontentsline{toc}{chapter}{\listfigurename}
+    \pdfbookmark[1]{\listfigurename}{lof}
+    \listoffigures
+
+    \vspace{8ex}
+
+    %*******************************************************
+    % List of Tables
+    %*******************************************************
+    %\phantomsection
+    %\addcontentsline{toc}{chapter}{\listtablename}
+    \pdfbookmark[1]{\listtablename}{lot}
+    \listoftables
+
+    \vspace{8ex}
+    % \newpage
+
+    %*******************************************************
+    % List of Listings
+    %*******************************************************
+    %\phantomsection
+    %\addcontentsline{toc}{chapter}{\lstlistlistingname}
+    %\pdfbookmark[1]{\lstlistlistingname}{lol}
+    %\lstlistoflistings
+
+    %\vspace{8ex}
+
+    %*******************************************************
+    % Acronyms
+    %*******************************************************
+    %\phantomsection
+\pdfbookmark[1]{Acronyms}{acronyms}
+\markboth{\spacedlowsmallcaps{Acronyms}}{\spacedlowsmallcaps{Acronyms}}
+\chapter*{Acronyms}
+
+\begin{tabular}{>{ \small }l l}
+    AIC & Akaike Information Criterion \\
+AS-units & Analysis of Speech Units \\
+BCCWJ & Balanced Corpus of Contemporary Written Japane- \\
+&se\\
+BIC & Bayesian Information Criterion \\
+CAF & Complexity, Accuracy, and Fluency \\
+CHA & Convex Hull Area \\
+CLIL & Content and Language Integrated Learning \\
+CLT & Cognitive Load Theory \\
+ESS & Effective Sample Size \\
+GAMMs &Generalized Additive Mixed Models\\
+GLMMs & Generalized Linear Mixed Models \\
+ICCs & Intraclass Correlation Coefficients \\
+IELTS & International English Language Testing System \\
+IMRAD & Introduction, Methods, Results, and Discussion \\
+IRR & Incidence Rate Ratios \\
+JLPT & Japanese-Language Proficiency Test \\
+L1 & First Language \\
+L2 & Second Language \\
+LDA & Linear Discriminant Analysis \\
+LISAS & Linear Integrated Speed-Accuracy Score \\
+LMMs & Linear Mixed Models \\
+MOOCs &Massive Open Online Courses \\
+MPDC & Mean Pupil Diameter Change \\
+OLS & Ordinary Least Squares \\
+OR & Odds Ratios \\
+PCA & Principal Component Analyses \\
+PCoA & Principal Coordinate Analysis \\
+PERMANOVA & Permutational Multivariate Analysis of Variance \\
+POS & Part-of-Speech \\
+Rg & Radius of Gyration \\
+ROM & Ratio of Means \\
+SOV & Subject-Object-Verb \\
+\end{tabular}
+
+\clearpage
+\begin{tabular}{>{ \small }l l}
+STEM &Science, Technology, Engineering, and Mathematics \\
+SPOT & Simple Performance-Oriented Test \\
+TBLT & Task-Based Language Teaching \\
+TOEFL & Test of English as a Foreign Language \\
+VIF & Variance Inflation Factors \\
+\end{tabular}
+\endgroup
