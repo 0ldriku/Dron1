@@ -45,13 +45,14 @@ Building on the prioritization view outlined above, we hypothesize:
 \section{Method}
 
 \subsection{Dimensionality Reduction and Variable Selection}
-To avoid multicollinearity and to select representative indicators, we ran principal component analyses (PCA) separately on standardized variables within the Fluency, Complexity, and Accuracy constructs. For Fluency (8 indicators), the first component loaded on rate measures (for example, speech rate loading $=0.44$) and the second on pause timing (for example, mid-clause pause duration loading $=0.74$). For Complexity (5 indicators), the first component indexed phrasal expansion (content words per AS-unit loading $=0.51$) and the second indexed lexical content (lexical density loading $=0.95$). For Accuracy (2 indicators), a single component was dominated by the error indicator (error rate per AS-unit loading $=0.71$). Based on this structure, we selected five representative indicators, namely speech rate, mid-clause pause duration, content words per AS-unit, lexical density, and error rate per AS-unit. Table~\ref{tab:pca-select} summarizes the selection. 
+To avoid multicollinearity and to select representative indicators, we ran principal component analyses (PCA) separately on standardized variables within the CAF constructs. For Fluency (eight indicators), the first component loaded on rate measures (for example, speech rate loading $=0.44$) and the second on pause timing (for example, mid-clause pause duration loading $=0.74$). For Complexity (five indicators), the first component indexed phrasal expansion (content words per AS-unit loading $=0.51$) and the second indexed lexical content (lexical density loading $=0.95$). For Accuracy (two indicators), a single component was dominated by the error indicator (error rate per AS-unit loading $=0.71$). Based on this structure, we selected five representative indicators, namely speech rate, mid-clause pause duration, content words per AS-unit, lexical density, and error rate per AS-unit. Table~\ref{tab:pca-select} summarizes the selection. Table \ref{tab:study1-descriptives} presents the descriptive statistics for the five selected indicators.
 
 
 \begin{table}[h!]
 \centering
-\footnotesize
+
 \caption{Representative indicators selected by within construct PCA.}
+\footnotesize
 \label{tab:pca-select}
 \begin{tabular}{llllS[table-format=1.3]}
 \toprule
@@ -66,6 +67,46 @@ Accuracy   & Errors     & Error rate (per AS-unit)      & PC1 & 0.707 \\
 \end{tabular}
 \end{table}
 
+
+
+\begin{table}[ht]
+\centering
+\caption{Descriptive statistics for five representative CAF indicators}
+\footnotesize
+\label{tab:study1-descriptives}
+% Set S column formats to align all numbers
+\begin{tabular}{l
+                S[table-format=3.2]
+                S[table-format=2.2]
+                S[table-format=3.2]
+                S[table-format=3.2]}
+\toprule
+& & & \multicolumn{2}{c}{$95\%$ CI} \\
+\cline{4-5}
+% Wrap S-column headers in {}
+\textsc{Measures} & {$M$} & {$SD$} & {\textit{Lower}} & {\textit{Upper}} \\
+\hline
+% Use \multicolumn for category headers
+\multicolumn{5}{l}{\textit{Low-complexity}} \\
+Speech rate & 203.97 & 47.62 & 187.62 & 220.33 \\
+Mid-clause pause duration & 0.69 & 0.22 & 0.61 & 0.76 \\
+Number of content words per AS-unit & 6.35 & 1.83 & 5.72 & 6.98 \\
+Lexical density & 46.33 & 3.65 & 45.08 & 47.58 \\
+Error rate & 0.91 & 0.59 & 0.71 & 1.11 \\\midrule
+
+\multicolumn{5}{l}{\textit{High-complexity}} \\
+
+Speech rate & 185.37 & 49.68 & 168.31 & 202.44 \\
+Mid-clause pause duration & 0.73 & 0.23 & 0.65 & 0.81 \\
+Number of content words per AS-unit & 5.62 & 1.40 & 5.14 & 6.10 \\
+Lexical density & 48.54 & 4.39 & 47.03 & 50.04 \\
+Error rate & 0.68 & 0.53 & 0.50 & 0.86 \\
+
+
+
+\bottomrule
+\end{tabular}
+\end{table}
 
 \subsection{Statistical Analysis}
 
@@ -82,8 +123,9 @@ The omnibus PERMANOVA revealed significant multivariate main effects for both ta
 
 \begin{table}[htbp]
 \centering
-\footnotesize
+
 \caption{PERMANOVA by terms on Euclidean distances of the five indicators (999 permutations).}
+\footnotesize
 \label{tab:permanova}
 % Use 'S' columns for numbers and set their format
 \begin{tabular}{l
@@ -126,8 +168,9 @@ Given the significant proficiency effect, we conducted pairwise PERMANOVAs with 
 
 \begin{table}[htbp]
 \centering
-\footnotesize
+
 \caption{Pairwise proficiency PERMANOVAs with Bonferroni adjusted $p$ values.}
+\footnotesize
 \label{tab:pairwise}
 \sisetup{
   input-signs = {},
@@ -164,8 +207,9 @@ As a descriptive follow up to the task complexity effect, LDA yielded a single d
 
 \begin{table}[t]
 \centering
-\footnotesize
+
 \caption{Linear discriminant coefficients (LD1). Positive values indicate higher scores on the fluency and phrasal side of the discriminant.}
+\footnotesize
 \label{tab:lda-coef}
 % Use 'S' column and set format for sign, 1 integer, 2 decimals
 \begin{tabular}{l S[table-format=-1.2]}
@@ -190,7 +234,7 @@ Proficiency (upper) & -1.49 \\
 \subsection{Prioritization Patterns Under Cognitive Load}
 Our research question asked how L2 learners prioritize and trade off complexity, accuracy, and fluency as cognitive load increases. The multivariate results show a reliable, although small, shift in the joint CAF profile from low to high complexity, with no moderation by proficiency. Reading the PERMANOVA alongside the LDA, learners under higher load prioritized lexical precision over phrasal elaboration and temporal speed; speech rate decreased and content words per AS unit declined, whereas lexical density increased, and accuracy was maintained. With respect to H1, the data support a coherent multivariate shift under higher load, with costs in temporal and phrasal fluency, and with protection of lexical precision and form reliability; no task complexity by proficiency interaction was observed.
 
-This trade-off pattern is consistent with limited capacity views in which performance dimensions compete for attentional resources as demands rise, producing costs in speed and phrasal elaboration when resources are redirected to lexical selection and monitoring \parencite{Skehan2009}. At the same time, the findings nuance resource-directing perspectives developed in task-based research: increases in task complexity are often expected to raise “complexity,” but the present evidence indicates such changes are dimension-specific, not unitary \parencite{Robinson2005}. Framed within the resource-directing / resource dispersing distinction \parencite{levkina2012}, our manipulation recruited attention into message formulation and monitoring: phrasal complexity contracted while lexical density increased, a dissociation that helps explain mixed CAF outcomes reported across task types and implementations \parencite{chen2022}.
+Such a trade-off pattern is consistent with limited capacity views in which performance dimensions compete for attentional resources as demands rise, producing costs in speed and phrasal elaboration when resources are redirected to lexical selection and monitoring \parencite{Skehan2009}. At the same time, the findings nuance resource-directing perspectives developed in task-based research: increases in task complexity are often expected to raise “complexity,” but the present evidence indicates such changes are dimension-specific, not unitary \parencite{Robinson2005}. Framed within the resource-directing / resource dispersing distinction \parencite{levkina2012}, our manipulation recruited attention into message formulation and monitoring: phrasal complexity contracted while lexical density increased, a dissociation that helps explain mixed CAF outcomes reported across task types and implementations \parencite{chen2022}.
 
 Proficiency explained additional variance independent of task complexity (with lower vs.\ upper differing), echoing reports that CAF reallocations vary systematically with learner characteristics \parencite{chen2022}. The absence of a task complexity by proficiency interaction indicates that increasing element interactivity shifted CAF profiles similarly across proficiency strata rather than amplifying or reversing group differences.
 
