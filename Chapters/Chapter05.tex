@@ -1,5 +1,5 @@
 %************************************************
-\chapter{Study 2: Listener Judgements Under Load}\label{ch:study2}
+\chapter{Study 2: Listener Judgments Under Load}\label{ch:study2}
 %************************************************
 
 \section{Introduction}
@@ -78,7 +78,7 @@ Conversely, because listeners inherently make fluency judgments based on selecte
 
 
 \section{Statistical Analysis}
-Table \ref{tab:descriptive_stats_study2_low} and Table \ref{tab:descriptive_stats_study2_high} present the descriptive statistics for the judgment scores and linguistic measures. All statistical analyses were conducted in R (version 4.3.0; \citeauthor{rcore2023}, \citeyear{rcore2023}). To investigate the relationship between comprehensibility and perceived fluency, we conducted separate analyses for the low- and high-complexity tasks. Normality checks using the Shapiro-Wilk test indicated non-normality only for comprehensibility scores in the high-complexity task. Consequently, parametric tests (t-test, Pearson correlation) were used for analyses within the low-complexity task. For the high-complexity task, the corresponding non-parametric tests (Wilcoxon signed-rank test, Spearman correlation) were employed. Effect sizes for these analyses were calculated and interpreted following \citeauthor{plonsky2014}'s (\citeyear{plonsky2014}) guidelines.
+Table \ref{tab:descriptive_stats_study2_low} and Table \ref{tab:descriptive_stats_study2_high} present the descriptive statistics for the judgment scores and linguistic measures. To investigate the relationship between comprehensibility and perceived fluency, we conducted separate analyses for the low- and high-complexity tasks. Normality checks using the Shapiro-Wilk test indicated non-normality only for comprehensibility scores in the high-complexity task. Consequently, parametric tests (t-test, Pearson correlation) were used for analyses within the low-complexity task. For the high-complexity task, the corresponding non-parametric tests (Wilcoxon signed-rank test, Spearman correlation) were employed. Effect sizes for these analyses were calculated and interpreted following \citeauthor{plonsky2014}'s (\citeyear{plonsky2014}) guidelines.
 
 \begin{table}[ht]
 \centering
@@ -221,11 +221,11 @@ Perceived Fluency & $.91$ & $.41$ & $.43$ & $.56$ & $.85$ & $.86$ & $.91$ \\
 
 
 
-\subsection{Relationship Between Comprehensibility and Perceived Fluency}
+\subsection{RQ1: Relationship Between Comprehensibility and Perceived Fluency}
 To examine whether comprehensibility and perceived fluency are distinct constructs, we conducted correlational and mean-comparison analyses. In the low-complexity task, a Pearson correlation showed a strong positive link between comprehensibility and perceived fluency ($r(33) = .94$, $p < .001$, $95\%$ CI $[0.88, 0.97]$, $d = 5.51$). A paired \textit{t}-test found no significant difference between comprehensibility ($M = 5.73$, $SD = 1.60$) and perceived fluency ($M = 5.84$, $SD = 1.60$; $t(34) = -1.79$, $p = .083$, $95\%$ CI $[-0.24, 0.02]$, $d = -0.30$). In the high-complexity task, a Spearman correlation indicated a strong relationship ($\rho(33) = .93$, $p < .001$, $95\%$ CI $[0.86, 0.96]$, $d = 4.91$), and a Wilcoxon test showed no significant difference between comprehensibility ($M = 5.51$, $SD = 1.65$) and perceived fluency ($M = 5.59$, $SD = 1.67$; $V = 130.5$, $p = .099$, $d = -0.23$).
 
 
-\subsection{Linguistic Dimensions of Comprehensibility} 
+\subsection{RQ2: Linguistic Dimensions of Comprehensibility} 
 \label{study2_comprehensibility}
 To investigate how linguistic dimensions shape comprehensibility across different levels of task complexity, we ran separate mixed-effects models and verified key assumptions. Shapiro-Wilk tests indicated no significant deviations from normality ($p > .05$), residual-versus-fitted plots indicated no heteroscedasticity, and all Variance Inflation Factors (VIF) stayed below 4. Random intercepts for speaker and rater had non-zero variances, suggesting no issues. These diagnostic checks suggested that the model assumptions were adequately met, and the results can be considered valid. Table \ref{tab:comprehensibility_models_study2} presents the best-fitting comprehensibility models for both tasks.
 
@@ -322,7 +322,7 @@ FinalPR & -0.45 & 0.23 & 3.89 & $\phantom{<}.063$ & 0.065 & +0.52 & 3.89 & $\pha
 \end{threeparttable}
 \end{table}
 
-\subsubsection{Perceived Fluency Model in Low-complexity Task}
+\subsubsection{RQ3: Perceived Fluency Model in Low-complexity Task}
 Table \ref{tab:perceived_fluency_models_study2} shows the low-complexity task's perceived fluency model with two significant negative fixed effects. Increased final-clause pause ratio ($\Delta R^2 = .120$) and error rate ($\Delta R^2 = .083$) reduced perceived fluency. Random effects analysis revealed considerable variance in fluency scores attributable to speaker (Variance $= 0.69$, $SD = 0.83$) and rater variation (Variance $= 0.63$, $SD = 0.79$), with residual variance at 0.96 ($SD = 0.98$). The model explained 15.9\% of variance through fixed effects ($R^2_m = .159$) and 64.5\% with random effects ($R^2_c = .645$), representing small and large effects, respectively. Drop-one analyses confirmed both effects' contributions, with high power for final-clause pause ratio (95.50\%) and error rate (87.80\%), indicating robust detection.
 
 \subsubsection{Perceived Fluency Model in High-complexity Task}
