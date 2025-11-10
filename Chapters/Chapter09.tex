@@ -35,7 +35,7 @@ When Japanese-specific complexity is combined with L2 status, processing demands
 
 
 \subsection{Expertise-Complexity Interactions}
-Disciplinary expertise denotes domain-specific literacy practices that guide selection, interpretation, and integration during academic reading. In this study, expertise is operationalized as major and text congruence: science majors reading science texts and arts or social sciences majors reading history texts. Analytically, we test expertise through domain-by-major interactions and simple effects contrasts that compare congruent and incongruent pairings. Two accounts make different predictions for how expertise interacts with linguistic complexity. Capacity-limited views hold that syntactic integration and memory demands draw on shared resources, so as locality increases and constituents must be maintained for longer, resources are reallocated to bottom-up processing and domain-guided strategies are curtailed \parencite{Gibson1998}. Interactive views treat comprehension as jointly shaped by text signals and knowledge, where prior domain knowledge provides expectations about information structure and likely relations among propositions, which can stabilize parsing decisions and support coherence building \parencite{goldman2002functional}. These accounts imply that expertise advantages are conditional, not uniform.
+Disciplinary expertise denotes domain-specific literacy practices that guide selection, interpretation, and integration during academic reading. In this study, expertise is operationalized as major and text congruence: science majors reading science texts and arts and social sciences majors reading history texts. Analytically, we test expertise through domain-by-major interactions and simple effects contrasts that compare congruent and incongruent pairings. Two accounts make different predictions for how expertise interacts with linguistic complexity. Capacity-limited views hold that syntactic integration and memory demands draw on shared resources, so as locality increases and constituents must be maintained for longer, resources are reallocated to bottom-up processing and domain-guided strategies are curtailed \parencite{Gibson1998}. Interactive views treat comprehension as jointly shaped by text signals and knowledge, where prior domain knowledge provides expectations about information structure and likely relations among propositions, which can stabilize parsing decisions and support coherence building \parencite{goldman2002functional}. These accounts imply that expertise advantages are conditional, not uniform.
 
 When domain expectations are usable and linguistic demands remain moderate, expert readers should display more selective sampling, longer forward steps, and more economical word-level processing, for example, higher skipping of predictable items \parencite{rayner1998}. As linguistic demands increase, selection becomes uniformly conservative for all readers as resources are absorbed by integration. The Japanese context sharpens these expectations. Because L2 readers often underuse predictive cues like case markers and integration costs accumulate at clause final verbs, processing is pushed toward a reactive mode that limits the headroom in which domain expectations can operate \parencite{mitsugi2016use, tamaoka2019eye}. 
 
@@ -113,8 +113,7 @@ Token-level models included the standard fixed effects structure, nuisance contr
 Both spatial dispersion measures are strictly positive and right skewed; therefore, analyses used a log scale and accounted for fixation count as a known determinant of dispersion. Radius of gyration (\(R_g\)) used a log normal LMM for \(\log(R_g)\), predicted from \(\log(n_{\text{fix}})\) and the standard fixed effects structure; the model included a random intercept for participant and an item intercept was tested and removed due to zero variance. Convex hull area (CHA) used a heteroskedastic Gaussian GLMM for \(\log(CHA_{\text{px}})\) with a random intercept for participant and a dispersion submodel. The dispersion submodel allowed residual variance to vary with task characteristics and fixation count by including domain by complexity, major group, and \(\log(n_{\text{fix}})\).
 
 
-Descriptive statistics for all measures are shown in Table~\ref{tab:descriptives}. Omnibus test tables appear in the main text, and complete post hoc results are provided in Supplementary Tables S1–S24.
-
+Descriptive statistics for all measures are shown in Table~\ref{tab:descriptives}. 
 \begin{table}[ht]
 \centering
 \footnotesize
@@ -163,7 +162,7 @@ Convex hull area (px$^2$) & $553086~(102295)$ & $922345~(140611)$ \\
 \end{table}
 
 \section{Results}
-For clarity, domain refers to the text domain (history; science) and major group refers to the participant's academic major (arts or social sciences; science). ``Disciplinary expertise'' is not a separate factor; it is the alignment of these two and is evaluated via the domain $\times$ major group interaction and simple effects that compare congruent and incongruent cells.
+For clarity, domain refers to the text domain (history; science) and major group refers to the participant's academic major (arts and social sciences; science). ``Disciplinary expertise'' is not a separate factor; it is the alignment of these two and is evaluated via the domain $\times$ major group interaction and simple effects that compare congruent and incongruent cells.
 
 \subsection{Model Diagnostics}
 
@@ -181,7 +180,7 @@ For RQ3 spatial metrics: the radius of gyration log normal LMM trimmed the top o
 
 \subsubsection{Fixation Count on Text}
 
-The number of fixations on text showed significant main effects of domain, complexity, and major group, alongside trend level interactions for domain $\times$ complexity and domain $\times$ major. As shown in Table \ref{tab:dv1_type3}, fixation counts were higher for science than history passages overall, higher for complex than simple passages, and higher among science than arts majors. Given the trend level interactions, we probed simple effects to characterize these patterns. For Science majors, history texts elicited fewer fixations than science texts (IRR $=0.838$, $\Delta=-16.2\%$, $p=.002$), whereas Arts showed no domain difference (IRR $=0.986$, $\Delta=-1.4\%$, $p=.827$). Both groups made many more fixations for complex than simple passages (Arts IRR $=0.616$, $\Delta=-38.5\%$, $p<.001$; Science IRR $=0.647$, $\Delta=-35.3\%$, $p<.001$). By complexity, domain differences were present for simple text (IRR $=0.739$, $\Delta=-26.2\%$, $p=.018$) but not for complex text (IRR $=1.119$, $\Delta=+11.9\%$, $p=.380$).
+The analysis showed significant main effects of domain, linguistic complexity, and major group, alongside trend level interactions for domain $\times$ linguistic complexity and domain $\times$ major. As shown in Table \ref{tab:dv1_type3}, fixation counts were higher for science than history passages overall, higher for complex than simple passages, and higher among science than arts and social science majors. Given the trend level interactions, we probed simple effects to characterize these patterns. For science majors, history texts elicited fewer fixations than science texts (IRR $=0.838$, $\Delta=-16.2\%$, $p=.002$), whereas arts and social science majors showed no domain difference (IRR $=0.986$, $\Delta=-1.4\%$, $p=.827$). Both groups made many more fixations for complex than simple passages (Arts IRR $=0.616$, $\Delta=-38.5\%$, $p<.001$; Science IRR $=0.647$, $\Delta=-35.3\%$, $p<.001$). By complexity, domain differences were present for simple text (IRR $=0.739$, $\Delta=-26.2\%$, $p=.018$) but not for complex text (IRR $=1.119$, $\Delta=+11.9\%$, $p=.380$).
 
 
 \begin{table}[ht]
@@ -199,17 +198,17 @@ The number of fixations on text showed significant main effects of domain, compl
 {Effect} & {$\chi^2$} & {df} & {$p$} \\
 \midrule
 {Domain} & 4.853 & 1 & {$\phantom{<}.028$} \\
-{Complexity} & 112.872 & 1 & {$<.001$} \\
-{Major group} & 8.678 & 1 & {$\phantom{<}.003$} \\
-{Domain $\times$ Complexity} & 2.963 & 1 & {$\phantom{<}.085$} \\
-{Domain $\times$ Major group} & 3.528 & 1 & {$\phantom{<}.060$} \\
-{Complexity $\times$ Major group} & 0.341 & 1 & {$\phantom{<}.559$} \\
+{Linguistic complexity} & 112.872 & 1 & {$<.001$} \\
+{Major} & 8.678 & 1 & {$\phantom{<}.003$} \\
+{Domain $\times$ Linguistic complexity} & 2.963 & 1 & {$\phantom{<}.085$} \\
+{Domain $\times$ Major} & 3.528 & 1 & {$\phantom{<}.060$} \\
+{Linguistic complexity $\times$ Major} & 0.341 & 1 & {$\phantom{<}.559$} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \subsubsection{Mean Fixation Duration on Text}
-Mean fixation duration on text was not directly influenced by a main effect of complexity, but was instead shaped by main effects of domain and major group, as well as significant domain $\times$ major and complexity $\times$ major interactions. As shown in Table \ref{tab:dv2_type3}, on the response scale, within Arts, science passages elicited longer fixations than history (ROM $=0.966$, $\Delta=-3.40\%$, $p<.001$); within Science, the domain difference was not reliable (ROM $=1.008$, $\Delta=+0.76\%$, $p=.191$). For complexity within major, Arts showed no reliable difference (ROM $=0.990$, $\Delta=-0.99\%$, $p=.088$), whereas Science showed slightly longer fixations for simple than complex (ROM $=1.013$, $\Delta=+1.33\%$, $p=.023$). Domain within complexity contrasts were not significant after adjustment.
+The analysis showed significant main effects for domain and major, as well as significant domain $\times$ major and linguistic complexity $\times$ major interactions. As shown in Table \ref{tab:dv2_type3}, on the response scale, within arts and social science majors, science passages elicited longer fixations than history (ROM $=0.966$, $\Delta=-3.40\%$, $p<.001$); within Science, the domain difference was not significant (ROM $=1.008$, $\Delta=+0.76\%$, $p=.191$). For linguistic complexity within major, arts and social science majors showed no reliable difference (ROM $=0.990$, $\Delta=-0.99\%$, $p=.088$), whereas Science major showed slightly longer fixations for simple than complex (ROM $=1.013$, $\Delta=+1.33\%$, $p=.023$). Domain within linguistic complexity contrasts were not significant after adjustment.
 
 
 \begin{table}[ht]
@@ -227,18 +226,31 @@ Mean fixation duration on text was not directly influenced by a main effect of c
 {Effect} & {$\chi^2$} & {df} & {$p$} \\
 \midrule
 {Domain} & 5.424 & 1 & {$\phantom{<}.020$} \\
-{Complexity} & 0.081 & 1 & {$\phantom{<}.776$} \\
-{Major group} & 5.924 & 1 & {$\phantom{<}.015$} \\
-{Domain $\times$ Complexity} & 0.185 & 1 & {$\phantom{<}.667$} \\
-{Domain $\times$ Major group} & 1551.845 & 1 & {$<.001$} \\
-{Complexity $\times$ Major group} & 468.631 & 1 & {$<.001$} \\
+{Linguistic complexity} & 0.081 & 1 & {$\phantom{<}.776$} \\
+{Major} & 5.924 & 1 & {$\phantom{<}.015$} \\
+{Domain $\times$ Linguistic complexity} & 0.185 & 1 & {$\phantom{<}.667$} \\
+{Domain $\times$ Major} & 1551.845 & 1 & {$<.001$} \\
+{Linguistic complexity $\times$ Major} & 468.631 & 1 & {$<.001$} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
+
+
+%\begin{figure}[ht]
+%  \centering
+%  \includegraphics[width=\linewidth]{Chapters/study4fig/s4rq1fig1.pdf}
+%  \caption[EMMs ($\pm$ 95\% CIs) of mean fixation duration]{EMMs ($\pm$ 95\% CIs) of mean fixation duration. (a) linguistic complexity $\times$ major interaction. (b) domain $\times$ major interaction.}
+  
+ % \label{fig:s4f1}
+%\end{figure}
+
+
+
 \subsubsection{Regressive saccade proportion}
 
-The proportion of regressive saccades was significantly influenced by domain and complexity, but not by the major group or any interactions between factors. As shown in Table \ref{tab:dv3_type3}, the proportion of regressive saccades was higher for history than science passages and higher for simple than complex passages overall. Because the complexity $\times$ major term trended ($p=.078$), we examined simple effects using a simple/complex contrast: Science majors showed higher odds of a regression in simple than in complex passages (OR$_{\text{simple/complex}}=1.131$, $\Delta=+13.1\%$, $p<.001$), whereas Arts showed no reliable difference (OR$_{\text{simple/complex}}=1.044$, $\Delta=+4.4\%$, $p=.247$). Domain effects within major were small and not reliable, and domain differences within complexity levels were non-significant after adjustment.
+The analysis showed significant main effects for domain and linguistic complexity, the main effect for major group was not significant. No significant interaction effects were observed.
+As shown in Table \ref{tab:dv3_type3}, the proportion of regressive saccades was higher for history than science passages and higher for simple than complex passages overall. Because the linguistic complexity $\times$ major interaction was trend level ($p=.078$), we examined simple effects using a simple/complex contrast: Science majors showed higher odds of a regression in simple than in complex passages (OR$_{\text{simple/complex}}=1.131$, $\Delta=+13.1\%$, $p<.001$), whereas arts and social science majors showed no reliable difference (OR$_{\text{simple/complex}}=1.044$, $\Delta=+4.4\%$, $p=.247$). Domain effects within major were small and not reliable, and domain differences within complexity levels were non-significant after adjustment.
 
 
 \begin{table}[ht]
@@ -256,18 +268,18 @@ The proportion of regressive saccades was significantly influenced by domain and
 {Effect} & {$\chi^2$} & {df} & {$p$} \\
 \midrule
 {Domain} & 4.634 & 1 & {$\phantom{<}.031$} \\
-{Complexity} & 13.138 & 1 & {$<.001$} \\
-{Major group} & 0.195 & 1 & {$\phantom{<}.659$} \\
-{Domain $\times$ Complexity} & 0.813 & 1 & {$\phantom{<}.367$} \\
-{Domain $\times$ Major group} & 0.000 & 1 & {$\phantom{<}.988$} \\
-{Complexity $\times$ Major group} & 3.105 & 1 & {$\phantom{<}.078$} \\
+{Linguistic complexity} & 13.138 & 1 & {$<.001$} \\
+{Major} & 0.195 & 1 & {$\phantom{<}.659$} \\
+{Domain $\times$ complexity} & 0.813 & 1 & {$\phantom{<}.367$} \\
+{Domain $\times$ Major} & 0.000 & 1 & {$\phantom{<}.988$} \\
+{Linguistic complexity $\times$ Major} & 3.105 & 1 & {$\phantom{<}.078$} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \subsubsection{Mean Progressive Saccade Amplitude}
 
-Mean progressive saccade amplitude was influenced by main effects of domain and complexity, and these effects were further qualified by a significant domain $\times$ major interaction and a marginal complexity $\times$ major interaction. As shown in Table \ref{tab:dv4_type3}, on the response scale, forward saccades were shorter in science than history for both groups, with a larger history over science advantage in Arts (ROM $=1.078$, $\Delta=+7.83\%$, $p<.001$) than in Science (ROM $=1.060$, $\Delta=+6.00\%$, $p=.001$). Both groups made shorter forward saccades in complex than simple passages, with a slightly larger reduction for science majors (simple over complex ROM $=1.049$, $\Delta=+4.93\%$, $p=.009$) than arts majors (ROM $=1.045$, $\Delta=+4.45\%$, $p=.018$). Domain within complexity contrasts were not reliable after adjustment.
+The analysis showed significant main effects for domain and linguistic complexity, and a significant domain $\times$ major interaction. As shown in Table \ref{tab:dv4_type3}, on the response scale, orogressive saccades were shorter in science than history for both groups, with a larger history over science advantage in arts and social science majors (ROM $=1.078$, $\Delta=+7.83\%$, $p<.001$) than in Science (ROM $=1.060$, $\Delta=+6.00\%$, $p=.001$). Both groups made shorter progressive saccades in complex than simple passages, with a slightly larger reduction for science majors (simple over complex ROM $=1.049$, $\Delta=+4.93\%$, $p=.009$) than arts and social science majors (ROM $=1.045$, $\Delta=+4.45\%$, $p=.018$). Domain within linguistic complexity contrasts were not reliable after adjustment.
 
 \begin{table}[ht]
 \centering
@@ -284,11 +296,11 @@ Mean progressive saccade amplitude was influenced by main effects of domain and 
 {Effect} & {$\chi^2$} & {df} & {$p$} \\
 \midrule
 {Domain} & 13.294 & 1 & {$<.001$} \\
-{Complexity} & 6.254 & 1 & {$\phantom{<}.012$} \\
-{Major group} & 3.775 & 1 & {$\phantom{<}.052$} \\
-{Domain $\times$ Complexity} & 0.663 & 1 & {$\phantom{<}.416$} \\
-{Domain $\times$ Major group} & 47.575 & 1 & {$<.001$} \\
-{Complexity $\times$ Major group} & 3.393 & 1 & {$\phantom{<}.065$} \\
+{Linguistic complexity} & 6.254 & 1 & {$\phantom{<}.012$} \\
+{Major} & 3.775 & 1 & {$\phantom{<}.052$} \\
+{Domain $\times$ Linguistic complexity} & 0.663 & 1 & {$\phantom{<}.416$} \\
+{Domain $\times$ Major} & 47.575 & 1 & {$<.001$} \\
+{Linguistic complexity $\times$ Major} & 3.393 & 1 & {$\phantom{<}.065$} \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -297,8 +309,7 @@ Mean progressive saccade amplitude was influenced by main effects of domain and 
 \subsection{RQ2: Word-Level Processing}
 
 \subsubsection{First Pass Duration}
-
-First pass duration at the word-level was primarily affected by text domain and the major group, in addition to a significant quadratic effect of token length. As shown in Table \ref{tab:fpd_type3}, first pass durations were longer for science than history passages overall, and longer for science than arts majors overall. To probe the marginal complexity $\times$ major interaction, simple-effects contrasts showed shorter first pass durations in history than science for both majors (Arts ROM $=0.964$, $\Delta=-3.57\%$, $p<.001$; Science ROM $=0.980$, $\Delta=-2.03\%$, $p=.012$). Complexity effects were negligible for Arts (ROM $=0.999$, $p=.930$) and small but significant for Science (simple/complex ROM $=1.020$, $\Delta=+2.02\%$, $p=.014$). Domain-within-complexity contrasts were not reliable after adjustment.
+The analysis showed significant main effects for domain and major, in addition to a significant quadratic effect of token length. As shown in Table \ref{tab:fpd_type3}, first pass durations were longer for science than history passages overall, and longer for science than arts and social science majors overall. To probe the marginal linguistic complexity $\times$ major interaction, simple-effects contrasts showed shorter first pass durations in history than science for both majors (Arts ROM $=0.964$, $\Delta=-3.57\%$, $p<.001$; Science ROM $=0.980$, $\Delta=-2.03\%$, $p=.012$). Linguistic complexity effects were negligible for arts and social science majors (ROM $=0.999$, $p=.930$) and small but significant for Science (simple/complex ROM $=1.020$, $\Delta=+2.02\%$, $p=.014$). Domain-within-complexity contrasts were not reliable after adjustment.
 
 \begin{table}[ht]
 \centering
@@ -314,17 +325,17 @@ First pass duration at the word-level was primarily affected by text domain and 
 \toprule
 {Effect} & {$\chi^2$} & {df} & {$p$} \\
 \midrule
-{$z_{\text{loglen}}$} & 0.022 & 1 & {$\phantom{<}.883$} \\
-{$z_{\text{loglen}}^{2}$} & 6.426 & 1 & {$\phantom{<}.011$} \\
-{$z_{\text{logfreq}}$} & 0.538 & 1 & {$\phantom{<}.463$} \\
-{$z_{\text{logfreq}}^{2}$} & 0.455 & 1 & {$\phantom{<}.500$} \\
-{POS group} & 0.019 & 1 & {$\phantom{<}.889$} \\
+{Token length (linear)} & 0.022 & 1 & {$\phantom{<}.883$} \\
+{Token length (quadratic)} & 6.426 & 1 & {$\phantom{<}.011$} \\
+{Token frequency (linear)} & 0.538 & 1 & {$\phantom{<}.463$} \\
+{Token frequency (quadratic)} & 0.455 & 1 & {$\phantom{<}.500$} \\
+{POS} & 0.019 & 1 & {$\phantom{<}.889$} \\
 {Domain} & 15.842 & 1 & {$<.001$} \\
-{Complexity} & 1.811 & 1 & {$\phantom{<}.178$} \\
-{Major group} & 6.717 & 1 & {$\phantom{<}.010$} \\
-{Domain $\times$ Complexity} & 0.251 & 1 & {$\phantom{<}.616$} \\
-{Domain $\times$ Major group} & 2.098 & 1 & {$\phantom{<}.147$} \\
-{Complexity $\times$ Major group} & 3.660 & 1 & {$\phantom{<}.056$} \\
+{Linguistic complexity} & 1.811 & 1 & {$\phantom{<}.178$} \\
+{Major} & 6.717 & 1 & {$\phantom{<}.010$} \\
+{Domain $\times$ Linguistic complexity} & 0.251 & 1 & {$\phantom{<}.616$} \\
+{Domain $\times$ Major} & 2.098 & 1 & {$\phantom{<}.147$} \\
+{Linguistic complexity $\times$ Major} & 3.660 & 1 & {$\phantom{<}.056$} \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -332,7 +343,7 @@ First pass duration at the word-level was primarily affected by text domain and 
 
 \subsubsection{Skipping Probability}
 
-The probability of skipping a word was influenced by token-level features (length, frequency, POS), experimental factors (domain, major group), and a significant interaction between domain and major. As shown in Table \ref{tab:skip_type3}, within both majors, history showed higher odds of being skipped than science (Arts OR $=1.155$, $p=.032$; Science OR $=1.283$, $p<.001$). Differences by complexity within major were not significant. By complexity, the history over science skipping difference held in simple passages (OR $=1.611$, $p=.005$) but not in complex passages.
+The analysis showed significant main effects for token-level features (length, frequency, POS), experimental factors (domain, major group), and a significant interaction between domain and major. As shown in Table \ref{tab:skip_type3}, within both majors, history showed higher odds of being skipped than science (Arts OR $=1.155$, $p=.032$; Science OR $=1.283$, $p<.001$). Differences by complexity within major were not significant. By complexity, the history over science skipping difference held in simple passages (OR $=1.611$, $p=.005$) but not in complex passages.
 
 \begin{table}[ht]
 \centering
@@ -348,17 +359,17 @@ The probability of skipping a word was influenced by token-level features (lengt
 \toprule
 {Effect} & {$\chi^2$} & {df} & {$p$} \\
 \midrule
-{z\_loglen} & 248.545 & 1 & {$<.001$} \\
-{z\_loglen$^{2}$} & 8.915 & 1 & {$\phantom{<}.003$} \\
-{z\_logfreq} & 3.958 & 1 & {$\phantom{<}.047$} \\
-{z\_logfreq$^{2}$} & 3.359 & 1 & {$\phantom{<}.067$} \\
-{POS group} & 12.574 & 1 & {$<.001$} \\
+{Token length (linear)} & 248.545 & 1 & {$<.001$} \\
+{Token length (quadratic)} & 8.915 & 1 & {$\phantom{<}.003$} \\
+{Token frequency (linear)} & 3.958 & 1 & {$\phantom{<}.047$} \\
+{Token frequency (quadratic)} & 3.359 & 1 & {$\phantom{<}.067$} \\
+{POS} & 12.574 & 1 & {$<.001$} \\
 {Domain} & 9.350 & 1 & {$\phantom{<}.002$} \\
-{Complexity} & 0.893 & 1 & {$\phantom{<}.345$} \\
-{Major group} & 9.652 & 1 & {$\phantom{<}.002$} \\
-{Domain $\times$ Complexity} & 3.184 & 1 & {$\phantom{<}.074$} \\
-{Domain $\times$ Major group} & 8.411 & 1 & {$\phantom{<}.004$} \\
-{Complexity $\times$ Major group} & 2.684 & 1 & {$\phantom{<}.101$} \\
+{Linguistic complexity} & 0.893 & 1 & {$\phantom{<}.345$} \\
+{Major} & 9.652 & 1 & {$\phantom{<}.002$} \\
+{Domain $\times$ Linguistic complexity} & 3.184 & 1 & {$\phantom{<}.074$} \\
+{Domain $\times$ Major} & 8.411 & 1 & {$\phantom{<}.004$} \\
+{Linguistic complexity $\times$ Major} & 2.684 & 1 & {$\phantom{<}.101$} \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -367,7 +378,7 @@ The probability of skipping a word was influenced by token-level features (lengt
 \subsection{RQ3: Spatial Characteristics of Eye-Movements}
 
 \subsubsection{Radius of Gyration}
-The radius of gyration, a measure of spatial dispersion, was significantly affected by text domain and the major group, but not by linguistic complexity or any interactions. As shown in Table \ref{tab:rg_type3}, spatial dispersion was larger for history than science passages overall, and larger for arts than science majors overall. In light of the trend level complexity $\times$ major term, simple-effects contrasts indicated that the complexity effect was weak overall and reached significance only for Science majors (simple/complex ROM $=0.967$, $\Delta=-3.27\%$, $p=.039$). Domain-within-major effects mirrored the main effect pattern (Science majors: history $>$ science, ROM $=1.039$, $\Delta=+3.93\%$, $p=.008$; Arts: ROM $=1.022$, $\Delta=+2.17\%$, $p=.173$). Domain-within-complexity contrasts were marginal in simple sections and absent in complex sections.
+The analysis showed significant main effects for domain and major. No significant interaction effects were observed. As shown in Table \ref{tab:rg_type3}, the radius of gyration was larger for history than science passages overall, and larger for arts and social science majors than science majors overall. In light of the trend level complexity $\times$ major term, simple-effects contrasts indicated that the linguistic complexity effect was weak overall and reached significance only for Science majors (simple/complex ROM $=0.967$, $\Delta=-3.27\%$, $p=.039$). Domain-within-major effects mirrored the main effect pattern (Science majors: history $>$ science, ROM $=1.039$, $\Delta=+3.93\%$, $p=.008$; Arts: ROM $=1.022$, $\Delta=+2.17\%$, $p=.173$). Domain-within-complexity contrasts were marginal in simple sections and absent in complex sections.
 
 
 \begin{table}[ht]
@@ -384,22 +395,22 @@ The radius of gyration, a measure of spatial dispersion, was significantly affec
 \toprule
 {Effect} & {$\chi^2$} & {df} & {$p$} \\
 \midrule
-{$\log(n_{\text{fix}})$} & 113.214 & 1 & {$<.001$} \\
+{Fixation count (log)} & 113.214 & 1 & {$<.001$} \\
 {Domain} & 7.751 & 1 & {$\phantom{<}.005$} \\
-{Complexity} & 1.077 & 1 & {$\phantom{<}.299$} \\
-{Major group} & 8.524 & 1 & {$\phantom{<}.003$} \\
-{Domain $\times$ Complexity} & 1.204 & 1 & {$\phantom{<}.273$} \\
-{Domain $\times$ Major group} & 0.632 & 1 & {$\phantom{<}.427$} \\
-{Complexity $\times$ Major group} & 3.364 & 1 & {$\phantom{<}.067$} \\
+{Linguistic complexity} & 1.077 & 1 & {$\phantom{<}.299$} \\
+{Major} & 8.524 & 1 & {$\phantom{<}.003$} \\
+{Domain $\times$ Linguistic complexity} & 1.204 & 1 & {$\phantom{<}.273$} \\
+{Domain $\times$ Major} & 0.632 & 1 & {$\phantom{<}.427$} \\
+{Linguistic complexity $\times$ Major} & 3.364 & 1 & {$\phantom{<}.067$} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 
 \subsubsection{Convex hull area}
+The analysis showed significant main effects for domain and linguistic complexity. No significant interaction effects were observed. As shown in Table \ref{tab:cha_type3}, convex hull area was larger for history than science passages overall, and larger for complex than simple passages overall. On the response scale, these main-effect directions held across majors, and the history-over-science difference was present in simple passages (ROM $=1.135$, $\Delta=+13.47\%$, $p=.009$) but not in complex passages (ROM $=1.050$, $p=.204$).
 
-Convex hull area was strongly influenced by main effects of both domain and complexity, with no significant effects involving the major group. As shown in Table \ref{tab:cha_type3}, hull area was larger for history than science passages overall, and larger for complex than simple passages overall. On the response scale, these main-effect directions held across majors, and the history-over-science difference was present in simple passages (ROM $=1.135$, $\Delta=+13.47\%$, $p=.009$) but not in complex passages (ROM $=1.050$, $p=.204$).
-
+\newpage
 
 \begin{table}[ht]
 \centering
@@ -417,18 +428,18 @@ Convex hull area was strongly influenced by main effects of both domain and comp
 \midrule
 {$\log(n_{\text{fix}})$} & 13.951 & 1 & {$<.001$} \\
 {Domain} & 25.208 & 1 & {$<.001$} \\
-{Complexity} & 400.500 & 1 & {$<.001$} \\
-{Major group} & 0.102 & 1 & {$\phantom{<}.749$} \\
-{Domain $\times$ Complexity} & 0.947 & 1 & {$\phantom{<}.330$} \\
-{Domain $\times$ Major group} & 0.145 & 1 & {$\phantom{<}.703$} \\
-{Complexity $\times$ Major group} & 0.177 & 1 & {$\phantom{<}.674$} \\
+{Linguistic complexity} & 400.500 & 1 & {$<.001$} \\
+{Major} & 0.102 & 1 & {$\phantom{<}.749$} \\
+{Domain $\times$ Linguistic complexity} & 0.947 & 1 & {$\phantom{<}.330$} \\
+{Domain $\times$ Major} & 0.145 & 1 & {$\phantom{<}.703$} \\
+{Linguistic complexity $\times$ Major} & 0.177 & 1 & {$\phantom{<}.674$} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \subsection{Summary of Main Findings}
 
-Linguistic complexity was the dominant factor across all measures, producing large effects on fixation counts, forward step length, and spatial dispersion. Domain effects were reliable but modest, with history passages associated with longer forward steps and larger spatial footprints than science passages. Major-related effects appeared both as main effects and as targeted interactions, but were smaller than the effects of linguistic complexity and domain. Critically, several patterns diverged from theoretical predictions, particularly for fixation counts (H1) and first-pass durations (H2), which are examined in detail in the Discussion below.
+Linguistic complexity was the dominant factor across all measures, producing large effects on fixation counts, mean progressive saccade amplitude, and spatial footprint, particularly a larger convex hull area. Domain effects were reliable but modest, with history passages associated with longer forward steps and larger spatial footprints than science passages. Major-related effects appeared both as main effects and as targeted interactions, but were smaller than the effects of linguistic complexity and domain. Critically, several patterns diverged from theoretical predictions, particularly for fixation counts (H1) and first-pass durations (H2), which are examined in detail in the Discussion below.
 
 \section{Discussion}
 
@@ -439,20 +450,20 @@ This study reexamines how disciplinary expertise, operationalized as major-by-do
 \subsection{RQ1: Global Eye-Movement Behavior}
 
 
-Linguistic complexity was associated with markedly higher fixation counts for both groups, in line with classic findings that difficulty is accommodated by denser sampling and shorter forward steps \parencite{rayner1998, drieghe2004, engbert2002dynamical, engbert2005swift}. Progressive saccades were shorter in complex than in simple passages, converging with gradient-based accounts in which higher processing demands suppress long forward launches. These convergences underscore that complexity was the dominant factor in global navigation.
+Linguistic complexity was associated with markedly higher fixation counts for both groups, in line with classic findings that difficulty is accommodated by denser sampling and shorter forward steps \parencite{rayner1998, drieghe2004, engbert2002dynamical, engbert2005swift}. Likewise, mean progressive saccade amplitude was shorter in complex than in simple passages, converging with gradient-based accounts in which higher processing demands suppress long forward launches. These convergences underscore that complexity was the dominant factor in global navigation.
 
 
 
 
-Domain effects were selective and moderate. Collapsing across other factors, fixation counts were higher for science than history. Simple-effects patterns revealed that science majors made more fixations on science than on history texts, whereas arts majors showed no domain difference. This pattern does not support H1, which predicted fewer fixations on expertise congruent texts because domain knowledge would make processing more efficient. Instead, it points to a selective expertise effect. This direction is compatible with a schema activation account, in which familiar discourse structures trigger richer representations with more information slots to be filled, which in turn invites additional fixations. This selective pattern is also consistent with Study 3 (\autoref{ch:study3}), where domain and complexity sometimes increased subjective effort while comprehension stayed high, so expertise can lead to deeper processing rather than cheaper processing when the material matches the learner. When readers encounter familiar discourse conventions, they may activate richer mental frameworks with more structural ``slots'' to be filled, for example, hypothesis–methods–results chains in science texts or sourcing and corroboration moves in historical narratives \parencite{goldman2002functional, goldman2016}. This activation invites additional fixations to bind local textual elements to those schema nodes, increasing sampling rather than reducing it \parencite{shanahan2008teaching, wineburg1991reading}. Under this account, domain-congruent expertise manifests not as global efficiency gains but as more thorough engagement with domain-relevant structure when capacity allows.
+Domain effects were selective and moderate. Collapsing across other factors, fixation counts were higher for science than history. Simple-effects patterns revealed that science majors made more fixations on science than on history texts, whereas arts and social science majors showed no domain difference. This pattern does not support H1, which predicted fewer fixations on expertise congruent texts because domain knowledge would make processing more efficient. Instead, it points to a selective expertise effect. This direction is compatible with a schema activation account, in which familiar discourse structures trigger richer representations with more information slots to be filled, which in turn invites additional fixations. This selective pattern is also consistent with Study 3 (\autoref{ch:study3}), where domain and complexity sometimes increased subjective effort while comprehension stayed high, so expertise can lead to deeper processing rather than cheaper processing when the material matches the learner. When readers encounter familiar discourse conventions, they may activate richer mental frameworks with more structural ``slots'' to be filled, for example, hypothesis–methods–results chains in science texts or sourcing and corroboration moves in historical narratives \parencite{goldman2002functional, goldman2016}. This activation invites additional fixations to bind local textual elements to those schema nodes, increasing sampling rather than reducing it \parencite{shanahan2008teaching, wineburg1991reading}. Under this account, domain-congruent expertise manifests not as global efficiency gains but as more thorough engagement with domain-relevant structure when capacity allows.
 This reversal highlights a measurement ambiguity: fixation counts alone cannot adjudicate between efficient processing (fewer fixations) and schema-driven elaboration (more fixations). We therefore treat H1 as not supported, and future work should combine fixation metrics with independent indices of comprehension depth or schema access (e.g., think-aloud probes, knowledge checks) to discriminate between these accounts.
 
 
 Both groups made many more fixations for complex than simple passages. Critically, by complexity level, the domain contrast was present for simple passages but absent for complex passages. This interaction supports a capacity-sharing account: when syntactic demands are moderate, readers with relevant background knowledge allocate additional sampling to in-domain texts; when linguistic load increases, capacity constraints override domain-selective policies \parencite{Gibson1998}.
 
-Mean fixation duration showed domain and major main effects but no overall complexity effect, consistent with prior work showing that difficulty is absorbed more by navigation (where and how often to look) than by large increases in dwell time \parencite{rayner1998}. Within arts majors, fixations were longer in science than in history, consistent with reading outside one's familiar discourse genre \parencite{shanahan2008teaching}. Within science majors, domain differences in mean duration were not reliable. The complexity comparison within science majors showed slightly longer durations in simple than complex passages (ROM = 1.013, $\Delta$ = +1.33\%). This reversal is statistically reliable but very small in magnitude and may reflect compensatory processes under high load (shorter individual fixations paired with many more fixations overall). Given the modest effect size, we treat this as an exploratory finding requiring replication rather than as evidence for expertise-reversal effects \parencite{kalyuga2007, mcnamara1996are}.
+Mean fixation duration showed domain and major main effects but no overall complexity effect, consistent with prior work showing that difficulty is absorbed more by navigation (where and how often to look) than by large increases in dwell time \parencite{rayner1998}. Within arts and social science majors, fixations were longer in science than in history, consistent with reading outside one's familiar discourse genre \parencite{shanahan2008teaching}. Within science majors, domain differences in mean duration were not reliable. The complexity comparison within science majors showed slightly longer durations in simple than complex passages (ROM = 1.013, $\Delta$ = +1.33\%). This reversal is statistically reliable but very small in magnitude and may reflect compensatory processes under high load (shorter individual fixations paired with many more fixations overall). Given the modest effect size, we treat this as an exploratory finding requiring replication rather than as evidence for expertise-reversal effects \parencite{kalyuga2007, mcnamara1996are}.
 
-Regressive-saccade proportion was higher for simple than for complex passages overall, a pattern that runs counter to the classic finding that difficulty increases regressions \parencite{drieghe2004}. The complexity × major interaction trended ($p = .078$), with science majors showing higher regression odds in simple than complex passages ($OR = 1.131, p < .001$) and arts majors showing no reliable difference. We interpret this unexpected reversal cautiously. One possibility is that our proportion-based measure combined with the strong reduction in forward-step length under high load indicates that rereading under complexity may have taken the form of short, local corrective fixations rather than long backward saccades, thereby reducing the proportion of movements classified as regressive. Alternatively, high linguistic load may have suppressed backward verification entirely as readers adopted a more conservative forward-only strategy. This pattern requires replication and ideally finer-grained classification of saccade types (e.g., short vs. long regressions) to adjudicate among these accounts. Although the omnibus domain effect reached significance, simple effects by major group were not reliable; we therefore avoid substantive domain claims for regressions at the subgroup level.
+Regressive-saccade proportion was higher for simple than for complex passages overall, a pattern that runs counter to the classic finding that difficulty increases regressions \parencite{drieghe2004}. The complexity × major interaction trended ($p = .078$), with science majors showing higher regression odds in simple than complex passages ($OR = 1.131, p < .001$) and arts and social science majors showing no reliable difference. We interpret this unexpected reversal cautiously. One possibility is that our proportion-based measure combined with the strong reduction in forward-step length under high load indicates that rereading under complexity may have taken the form of short, local corrective fixations rather than long backward saccades, thereby reducing the proportion of movements classified as regressive. Alternatively, high linguistic load may have suppressed backward verification entirely as readers adopted a more conservative forward-only strategy. This pattern requires replication and ideally finer-grained classification of saccade types (e.g., short vs. long regressions) to adjudicate among these accounts. Although the omnibus domain effect reached significance, simple effects by major group were not reliable; we therefore avoid substantive domain claims for regressions at the subgroup level.
 
 \subsection{RQ2: Word-Level Processing}
 
@@ -461,7 +472,7 @@ H2 predicted that expertise-congruent texts would show shorter first-pass durati
 
 Several factors may account for this unexpected pattern. First, the domain effect may reflect discourse-level differences in information density and lexical predictability that are independent of reader expertise. Scientific expository prose, even when syntactically simplified, often employs lower-frequency technical vocabulary and higher propositional density than historical narrative, which could slow initial lexical access for all readers \parencite{goldman2002functional}. Second, the materials manipulation targeted syntactic complexity while holding lexical frequency distributions roughly constant across domains; however, residual differences in conceptual density may have introduced baseline timing differences that swamped expertise-related facilitation. Third, and most fundamentally, the major-by-domain operationalization of expertise may be too coarse to capture word-level facilitation, which likely requires finer-grained alignment between specific lexical items and individual knowledge structures.
 
-The complexity manipulation produced minimal token-level effects: no reliable difference for arts majors and a small simple-over-complex increase for science majors ($ROM = 1.020$, $\Delta$ = $+2.02\%$, $p = .014$). Given the modest size of this effect (approximately $2\%$), we treat it as consistent with but not diagnostic of expertise-sensitive timing adjustments.
+The complexity manipulation produced minimal token-level effects: no reliable difference for arts and social science majors and a small simple-over-complex increase for science majors ($ROM = 1.020$, $\Delta$ = $+2.02\%$, $p = .014$). Given the modest size of this effect (approximately $2\%$), we treat it as consistent with but not diagnostic of expertise-sensitive timing adjustments.
 
 Skipping replicated canonical effects of token length and frequency \parencite{rayner1998} and showed higher skipping in history than in science overall. Critically, this domain difference was qualified by a domain × complexity interaction: higher history skipping appeared in simple passages ($OR = 1.611$, $p = .005$) but disappeared in complex passages. This pattern is compatible with a capacity-sharing account in which higher linguistic load raises selection thresholds and reduces the scope for domain-specific parafoveal sampling policies \parencite{Gibson1998}. When demands are lower, readers may rely more on genre expectations and discourse schemas to guide word-skipping decisions \parencite{shanahan2008teaching, goldman2016}; when demands are higher, those expectations are constrained and selection becomes uniformly conservative across readers.
 
@@ -478,7 +489,7 @@ Convex hull area showed robust effects of both domain and complexity. Hull area 
 
 Duration-weighted radius of gyration, after controlling for log fixation count, showed domain and major main effects and a small complexity effect that appeared only for science readers (simple/complex ROM = 0.967, $\Delta$ = -3.27\%, p = .039). The divergence from convex hull area requires explanation. Convex hull area indexes the geometric extent of unique fixation landing positions, essentially how much of the page was covered regardless of revisitation patterns. Radius of gyration, in contrast, measures clustering around the duration-weighted centroid conditional on the number of fixations that occurred \parencite{schad2012zoom}. Thus, two readers could have identical hull areas but different radii if one reader distributed fixation time more evenly across landing sites while the other concentrated time in a few locations with occasional excursions.
 
-The pattern observed here suggests that complexity uniformly broadened the footprint for all readers (as indexed by hull area), but did not uniformly shift how tightly fixations clustered around their geometric center once fixation count was controlled (as indexed by radius). Domain was associated with differences in typical spatial layout: history passages elicited both larger hulls and larger radii, consistent with either wider visual search or less centralized fixation distributions. Major group showed a main effect on radius (arts readers had larger radii than science readers overall) but no effect on hull area. This implies that arts and science majors covered similar total areas but differed in how they distributed fixation time within those areas. These divergences underscore the complementary information provided by different spatial indices and suggest that a single spatial measure may not fully capture the multidimensional adjustments readers make under varying discourse and processing conditions.
+The pattern observed here suggests that complexity uniformly broadened the footprint for all readers (as indexed by hull area), but did not uniformly shift how tightly fixations clustered around their geometric center once fixation count was controlled (as indexed by radius). Domain was associated with differences in typical spatial layout: history passages elicited both larger hulls and larger radii, consistent with either wider visual search or less centralized fixation distributions. Major group showed a main effect on radius (arts and social science majors readers had larger radii than science readers overall) but no effect on hull area. This implies that arts and science majors covered similar total areas but differed in how they distributed fixation time within those areas. These divergences underscore the complementary information provided by different spatial indices and suggest that a single spatial measure may not fully capture the multidimensional adjustments readers make under varying discourse and processing conditions.
 
 
 
@@ -489,4 +500,3 @@ This study examined how disciplinary training, operationalized as academic major
 
 The eye-tracking results showed a consistent pattern of effects. Linguistically complex passages elicited more fixations, shorter forward steps, and broader spatial dispersion for all readers. In contrast, the influence of domain expertise was more subtle and contingent on this processing load. Readers demonstrated modest advantages in their area of expertise, for example slightly higher skipping of predictable items in simple passages, but these benefits were most apparent in syntactically simple texts. As linguistic demands increased, these advantages diminished, suggesting that the costs of parsing can override knowledge based reading strategies.
 
-For L2 instruction and materials design, the most reliable leverage is a sequenced approach. First, manage syntactic complexity, since it was the primary driver of cognitive load. Next, make discourse structure visible through predictable information placement and explicit connectives. Finally, align content with students' domain knowledge once these linguistic and structural supports are in place. Sequencing materials in this order should yield the largest and most transferable gains for comprehension in second language academic reading.

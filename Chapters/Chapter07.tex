@@ -21,7 +21,9 @@ This study involved 36 participants (25 female and 11 male), recruited from a un
 
 \section{Materials}
 
-\subsection{Topic Selection and Task Flow}
+\subsection{Learning Materials}
+
+\subsubsection{Task Structure and Content}
 
 We selected four topics as the learning materials: two from the domain of science (public and private key cryptography, hereafter ``science 1,'' and k-anonymity, hereafter ``science 2'') and two from history (Irish Potato Famine, hereafter ``history 1,'' and the defection of Viktor Belenko, hereafter ``history 2''). The participants reported no prior detailed knowledge of the specific subjects covered. Each learning task consisted of an introduction phase followed by three content sections that presented the core educational material about the topic, including key concepts, mechanisms, and relevant examples. Upon the completion of all content sections, the participants completed three corresponding question sections that were administered sequentially, mirroring the presentation order of the content sections. The flow within each learning task is shown in Figure \ref{fig:taskflow}. In every question section, the participants answered three multiple-choice questions, each requiring the selection of one correct answer from four options. These questions were designed to assess three distinct cognitive processes: recall (retrieving factual information), reasoning (making logical inferences), and comprehension (understanding conceptual relationships). The order of presentation of questions in each question section was randomized for each participant. All materials, including the learning tasks, instructions, and questions were presented in Japanese.
 
@@ -34,68 +36,7 @@ We selected four topics as the learning materials: two from the domain of scienc
 \end{figure*}
 
 
-\subsection{Material Design and Presentation Format}
-
-
-
-
-%-revision---reviewer 2 comment 3, reviewer 1 method comment 3
-Word counts for all learning tasks and durations for video-based tasks are detailed in Table \ref{tab:word_count_duration}. The average narration speed across all video passages was approximately 310 words per minute, a rate consistent with Japanese news broadcasts. All narration audio was normalized to ensure consistent volume levels. Each video section was presented at $1920 \times 1080$ resolution as a complete, continuous unit on a single screen. Both text and video modalities shared an identical visual layout. A static, topic-relevant figure was displayed on the left side of the screen in both conditions. The right side differed depending on modality: for the text-based learning tasks, the corresponding text appeared on the right side of this figure, with the entire text for each section presented simultaneously on a single screen without requiring scrolling; for the video-based learning tasks, the right side featured a video of a talking head delivering the narration. A standard video player interface was presented at the bottom of the screen, featuring a timeline progress bar for unrestricted navigation and a central cluster of playback controls (e.g., play/pause, fast-forward, rewind). To isolate the modality effect and avoid confounding from redundant on-screen text, all videos were presented without captions.
-
-
-\begin{table}[htbp]
-\centering
-\begin{threeparttable}
-\caption{Word counts and durations by task section}
-\label{tab:word_count_duration}
-\setlength{\tabcolsep}{2pt} % Reduced column spacing
-\footnotesize % Reduced font size for the table
-\begin{tabular}{
-    c % Topic
-    c % Modality
-    c % Linguistic Complexity
-    S[table-format=3.0] % Section 1 Words
-    S[table-format=3.0] % Section 2 Words  
-    S[table-format=3.0] % Section 3 Words
-    S[table-format=1.2] % Section 1 Duration
-    S[table-format=1.2] % Section 2 Duration
-    S[table-format=1.2] % Section 3 Duration
-}
-\toprule
-\textsc{Topic} & \textsc{Modality} & \textsc{LC} & \multicolumn{3}{c}{\textsc{Word Count}} & \multicolumn{3}{c}{\textsc{Duration (min)}} \\
-\cmidrule{4-6} \cmidrule{7-9}
-{} & {} & {} & {Sec. 1} & {Sec. 2} & {Sec. 3} & {Sec. 1} & {Sec. 2} & {Sec. 3} \\
-\midrule
-History 1 & Video & Simple    & 294 & 345 & 395 & 0.95 & 1.20 & 1.28 \\
-History 1 & Video & Complex   & 661 & 693 & 706 & 2.02 & 2.23 & 2.18 \\
-History 2 & Text  & Simple    & 409 & 367 & 434 & {--} & {--} & {--} \\
-History 2 & Text  & Complex   & 717 & 704 & 788 & {--} & {--} & {--} \\
-Science 1 & Video & Simple    & 330 & 395 & 386 & 1.17 & 1.30 & 1.35 \\
-Science 1 & Video & Complex   & 600 & 697 & 762 & 1.83 & 2.13 & 2.43 \\
-Science 2 & Text  & Simple    & 359 & 380 & 449 & {--} & {--} & {--} \\
-Science 2 & Text  & Complex   & 642 & 652 & 778 & {--} & {--} & {--} \\
-\bottomrule
-\end{tabular}
-\begin{tablenotes}[flushleft]
-\footnotesize
-\item \textit{Note.} Word counts and durations for each of the three sections per task. Sec.: Section. Duration shows time per section for video tasks; dashes indicate text-based tasks.
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
-
-
-%------
-
-\subsection{Questionnaires}
-
-
-We collected the participants' demographic information, including their academic major, gender, and length of stay in Japan. Japanese self-efficacy was assessed using an 11-item scale adapted from the Questionnaire of English Self-Efficacy \parencite{wang2013self}. In the present study, the scale demonstrated excellent internal consistency ($\alpha = .94$). In line with the focus of our study, only items targeting reading and listening were retained. Cognitive load was assessed using a scale adapted from \parencite{paas_training_1992}, which asked, ``How much mental effort did you invest in the preceding section?'' (1 = extremely low, 7 = extremely high). Self-efficacy was also assessed after each content section using a scale adapted from \parencite{williams_using_2016}, which asked, ``How confident are you that you will understand the next section?'' (1 = not at all confident, 7 = extremely confident). Both cognitive load and self-efficacy were assessed after completing each of the three content sections within a learning task.
-
-To confirm that our manipulation of linguistic complexity was perceived by the participants as intended, we assessed perceived linguistic complexity after each learning task. The participants judged the overall linguistic complexity of the entire learning material by answering the following question: ``How complex did you find the language of the entire learning material you just studied?'' (1 = extremely simple, 7 = extremely complex). All scales and questionnaires were presented in Chinese, the participants' first language, to minimize additional cognitive load, particularly for measures collected during the experimental tasks.
-
-
-
-\subsection{Linguistic Complexity Manipulation}
+\subsubsection{Linguistic Complexity Manipulation}
 
 The manipulation of linguistic complexity mainly followed established approaches \parencite{crossley_large-scaled_2023, zhang_contribution_2025}. However, our experiment focused exclusively on syntactic complexity, keeping lexical difficulty stable to preserve access to learning content. 
 %-revision---- method comment 2
@@ -204,12 +145,83 @@ All indices were computed using the GiNZA Japanese natural language processing l
 
 
 
+\subsection{Presentation Modality and Screen Layout}
+
+
+
+
+%-revision---reviewer 2 comment 3, reviewer 1 method comment 3
+Word counts for all learning tasks and durations for video-based tasks are detailed in Table \ref{tab:word_count_duration}. The average narration speed across all video passages was approximately 310 words per minute, a rate consistent with Japanese news broadcasts. All narration audio was normalized to ensure consistent volume levels. Each video section was presented at $1920 \times 1080$ resolution as a complete, continuous unit on a single screen. Both text and video modalities shared an identical visual layout. A static, topic-relevant figure was displayed on the left side of the screen in both conditions. The right side differed depending on modality: for the text-based learning tasks, the corresponding text appeared on the right side of this figure, with the entire text for each section presented simultaneously on a single screen without requiring scrolling; for the video-based learning tasks, the right side featured a video of a talking head delivering the narration. A standard video player interface was presented at the bottom of the screen, featuring a timeline progress bar for unrestricted navigation and a central cluster of playback controls (e.g., play/pause, fast-forward, rewind). To isolate the modality effect and avoid confounding from redundant on-screen text, all videos were presented without captions.
+
+
+\begin{table}[htbp]
+\centering
+\begin{threeparttable}
+\caption{Word counts and durations by task section}
+\label{tab:word_count_duration}
+\setlength{\tabcolsep}{2pt} % Reduced column spacing
+\footnotesize % Reduced font size for the table
+\begin{tabular}{
+    c % Topic
+    c % Modality
+    c % Linguistic Complexity
+    S[table-format=3.0] % Section 1 Words
+    S[table-format=3.0] % Section 2 Words  
+    S[table-format=3.0] % Section 3 Words
+    S[table-format=1.2] % Section 1 Duration
+    S[table-format=1.2] % Section 2 Duration
+    S[table-format=1.2] % Section 3 Duration
+}
+\toprule
+\textsc{Topic} & \textsc{Modality} & \textsc{LC} & \multicolumn{3}{c}{\textsc{Word Count}} & \multicolumn{3}{c}{\textsc{Duration (min)}} \\
+\cmidrule{4-6} \cmidrule{7-9}
+{} & {} & {} & {Sec. 1} & {Sec. 2} & {Sec. 3} & {Sec. 1} & {Sec. 2} & {Sec. 3} \\
+\midrule
+History 1 & Video & Simple    & 294 & 345 & 395 & 0.95 & 1.20 & 1.28 \\
+History 1 & Video & Complex   & 661 & 693 & 706 & 2.02 & 2.23 & 2.18 \\
+History 2 & Text  & Simple    & 409 & 367 & 434 & {--} & {--} & {--} \\
+History 2 & Text  & Complex   & 717 & 704 & 788 & {--} & {--} & {--} \\
+Science 1 & Video & Simple    & 330 & 395 & 386 & 1.17 & 1.30 & 1.35 \\
+Science 1 & Video & Complex   & 600 & 697 & 762 & 1.83 & 2.13 & 2.43 \\
+Science 2 & Text  & Simple    & 359 & 380 & 449 & {--} & {--} & {--} \\
+Science 2 & Text  & Complex   & 642 & 652 & 778 & {--} & {--} & {--} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Note.} Word counts and durations for each of the three sections per task. Sec.: Section. Duration shows time per section for video tasks; dashes indicate text-based tasks.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+%------
+
+\subsection{Questionnaires}
+
+
+We collected the participants' demographic information, including their academic major, gender, and length of stay in Japan. Japanese self-efficacy was assessed using an 11-item scale adapted from the Questionnaire of English Self-Efficacy \parencite{wang2013self}. In the present study, the scale demonstrated excellent internal consistency ($\alpha = .94$). In line with the focus of our study, only items targeting reading and listening were retained. Cognitive load was assessed using a scale adapted from \parencite{paas_training_1992}, which asked, ``How much mental effort did you invest in the preceding section?'' (1 = extremely low, 7 = extremely high). Self-efficacy was also assessed after each content section using a scale adapted from \parencite{williams_using_2016}, which asked, ``How confident are you that you will understand the next section?'' (1 = not at all confident, 7 = extremely confident). Both cognitive load and self-efficacy were assessed after completing each of the three content sections within a learning task.
+
+To confirm that our manipulation of linguistic complexity was perceived by the participants as intended, we assessed perceived linguistic complexity after each learning task. The participants judged the overall linguistic complexity of the entire learning material by answering the following question: ``How complex did you find the language of the entire learning material you just studied?'' (1 = extremely simple, 7 = extremely complex). All scales and questionnaires were presented in Chinese, the participants' first language, to minimize additional cognitive load, particularly for measures collected during the experimental tasks.
+
+
+
+
 
 
 
 
 \section{Apparatus}
 Eye movements and binocular pupil diameter were recorded using a Gazepoint GP3 eye-tracker at 60 Hz during the experimental sessions. Participants read texts presented on a 19-inch 1920$\times$1080 pixel display while their gaze was continuously monitored. A nine-point calibration process was performed before the reading task to ensure accurate eye-tracking.
+Participants were positioned at a comfortable viewing distance (approximately 60 cm) from the monitor, with the eye-tracker mounted below the display and their head stabilized using a chin rest to ensure a consistent viewing angle throughout the experiment (see Figure \ref{fig:eyetracker}).
+
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{Chapters/c3fig/eyetracker.png}
+  \caption{Experimental setup}
+  \label{fig:eyetracker}
+\end{figure*}
 
 
 \section{Procedure}
@@ -229,12 +241,12 @@ Eye movements and binocular pupil diameter were recorded using a Gazepoint GP3 e
       \cmidrule(lr){2-4}\cmidrule(lr){5-7}
         & \textsc{Modality} & \textsc{LC} & \textsc{Topic}  & \textsc{Modality} & \textsc{LC} & \textsc{Topic} \\
       \midrule
-      1
-        & Video & Simple  & Science 1
+      1        & Video & Simple  & Science 1
         & Text  & Complex & Science 2 \\
-      2
-        & Video & Complex & History 1
+      2        & Video & Complex & History 1
         & Text  & Simple  & History 2 \\
+      3 &Text &Complex &Science 2 & Video &Simple &Science 1 \\
+      4 &Text &Simple &History 2 & Video &Complex &History 1\\
       \hline
     \end{tabular*}
     
@@ -246,12 +258,14 @@ Eye movements and binocular pupil diameter were recorded using a Gazepoint GP3 e
       \cmidrule(lr){2-4}\cmidrule(lr){5-7}
         & \textsc{Modality} & \textsc{LC} & \textsc{Topic}  & \textsc{Modality} & \textsc{LC} & \textsc{Topic} \\
       \midrule
-      3
+      1
         & Video & Simple  & History 1
         & Text  & Complex & History 2 \\
-      4
+      2
         & Video & Complex & Science 1
         & Text  & Simple  & Science 2 \\
+              3 &Text &Complex &History 2 & Video &Simple &History 1 \\
+      4 &Text &Simple &Science 2 & Video &Complex &Science 1\\
       \bottomrule
     \end{tabular*}
     \begin{tablenotes}[flushleft]
@@ -282,7 +296,7 @@ All materials were presented with PsychoPy (Version 2024.2.4; \parencite{peirce2
   \caption{Average time spent on learning tasks}
   \label{tab:task_times}
   \footnotesize
-  \setlength{\tabcolsep}{3.5pt}
+  \setlength{\tabcolsep}{2.5pt}
   \begin{threeparttable}
     \begin{tabular}{cc*{4}{c}cc}
       \toprule
@@ -306,6 +320,10 @@ All materials were presented with PsychoPy (Version 2024.2.4; \parencite{peirce2
 \end{table*}
 %----
 
+
+\section{Statistical Analysis}
+
+All statistical analyses reported in PART III were conducted in R (version 4.5.1; \citeauthor{rcoreteam}, \citeyear{rcoreteam}), using packages specified in each study chapter. 
 
 \section{Validation of Linguistic Complexity Manipulation}
 
@@ -363,9 +381,6 @@ Domain:LC:Modality & 5.29 & 5.29 & 1 & 34 & 3.56 & {$.068$} \\
 \end{table}
 
 
-\section{Statistical Analysis}
-
-All statistical analyses reported in PART III were conducted in R (version 4.5.1; \citeauthor{rcoreteam}, \citeyear{rcoreteam}), using packages specified in each study chapter. 
 
 
 \subsection{Objective Validation: Pupillometry}
@@ -438,4 +453,19 @@ Section         & 2328 & 0.76 & $\phantom{<}.467$ & 2366 & 0.69 & $\phantom{<}.5
 \bottomrule
 \end{tabular}
 \end{table}
+
+
+
+\section{Analytical Roadmap for Studies 3, 4, and 5}
+
+The data collected and processed in Experiment 2 are analyzed across the three subsequent chapters, with each study focusing on a distinct set of measures to provide a multi-level account of comprehension.
+
+\begin{description}
+    \item[Study 3 (\autoref{ch:study3})] Analyzes the subjective ratings (cognitive load and self-efficacy) and the comprehension accuracy scores. This study models how these outcomes are jointly shaped by linguistic complexity, domain, modality, and learner major.
+    \item[Study 4 (\autoref{ch:study4})] Analyzes the aggregate eye-movement measures captured during the text modality tasks. This study examines temporal (e.g., fixation durations) and spatial (e.g., scan-path geometry) indices to trace the real-time allocation of visual attention.
+    \item[Study 5 (\autoref{ch:study5})] Analyzes the continuous pupil diameter from both text and video modalities. This study models the temporal trajectories of physiological effort to understand how cognitive load fluctuates over time.
+\end{description}
+
+
+
 
