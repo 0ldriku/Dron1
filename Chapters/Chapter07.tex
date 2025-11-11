@@ -44,9 +44,9 @@ Whereas high syntactic complexity presents a processing challenge that taxes wor
 %----
 Source texts on the four topics were edited into paired versions: a simple version with shorter sentences and shallower embedding and a complex version with more elaborate syntax. Topic coverage, paragraph breaks, and surface vocabulary were left unchanged between versions.
 
-The syntactic complexity manipulation was characterized using multiple metrics, detailed in Table \ref{tab:metrics}. Sentence length, expressed as the mean number of tokens per sentence, averaged 46.07--57.23 and 24.44--32.35 tokens in the complex and simple versions, respectively ($SD = 16.63\text{--}23.11$ versus $7.91\text{--}15.81$; maximum sentence length = 94--100 versus 43--87 tokens). Parse-tree height, the depth of the dependency tree from the root to the deepest leaf, ranged from 7.04 to 8.82 nodes in the complex versions and 4.15 to 5.61 nodes in the simple versions. Mean dependency distance, the average linear separation in tokens between syntactically linked heads and dependents, ranged from 2.99 to 3.27 tokens in the complex versions and 2.62 to 2.91 tokens in the simple versions. Constituent density followed the same pattern: noun phrases per sentence ranged from 12.29 to 14.23 in the complex versions and 7.04 to 10.30 in the simple versions, and particle--verb frames increased from 3--13 in the simple versions to 25--38 in the complex versions.
+The syntactic complexity manipulation was characterized using multiple metrics, detailed in Table \ref{tab:metrics}. Sentence length, expressed as the mean number of tokens per sentence, averaged 46.07--57.23 and 24.44--32.35 tokens in the complex and simple versions, respectively ($SD = 16.63\text{--}23.11$ versus $7.91\text{--}15.81$; maximum sentence length = 94--100 versus 43--87 tokens). Parse-tree\footnote{Parse-tree: Also known as a syntactic constituency tree, is a hierarchical data structure used in linguistics and computer science to represent the syntactic structure of a sentence according to a formal grammar. It visually breaks down a sentence into its constituent parts, such as noun phrases and verb phrases, showing their relationships down to the individual word level.} height, the depth of the dependency tree from the root to the deepest leaf, ranged from 7.04 to 8.82 nodes in the complex versions and 4.15 to 5.61 nodes in the simple versions. Mean dependency distance\footnote{Dependency distance: A measure of syntactic complexity used in sentence processing, defined as the linear distance (e.g., the number of intervening words) between two syntactically related words, or dependencies. Longer dependency distances are broadly associated with greater cognitive load, as they increase the memory demands required to connect the related elements.}, the average linear separation in tokens between syntactically linked heads and dependents, ranged from 2.99 to 3.27 tokens in the complex versions and 2.62 to 2.91 tokens in the simple versions. Constituent density followed the same pattern: noun phrases per sentence ranged from 12.29 to 14.23 in the complex versions and 7.04 to 10.30 in the simple versions, and particle--verb frames increased from 3--13 in the simple versions to 25--38 in the complex versions.
 
-Lexical complexity metrics remained stable (Table~\ref{tab:metrics}). Document-level root type--token ratios (a measure of lexical diversity calculated by dividing unique lemmatized word types by the total lemmatized tokens, with the necessary tokenization, lemmatization, and part-of-speech tagging), calculated for noun, verb, and prepositional phrase heads, varied by no more than 0.02 across versions, and the proportions of high-, mid-, and low-frequency tokens shifted by at most 3.47 percentage points.
+Lexical complexity metrics remained stable (Table~\ref{tab:metrics}). Document-level root type--token ratios,\footnote{Root type--token ratios: A measure of lexical diversity, calculated by dividing unique \textit{lemmatized} word types by the total \textit{lemmatized} tokens. This calculation required: \textit{tokenization} (the computational process of segmenting a continuous string of text into its component units, or 'tokens', e.g., words, particles, which is a non-trivial step in Japanese as it lacks explicit word delimiters); \textit{part-of-speech (POS) tagging} (the process of assigning a grammatical category, e.g., noun, verb, particle, to each token); and \textit{lemmatization} (the process of reducing an inflected word, e.g., \begin{CJK}{UTF8}{ipxm}食べた\end{CJK}, \textit{tabeta}, 'ate', to its base or dictionary form, e.g., \begin{CJK}{UTF8}{ipxm}食べる\end{CJK}, \textit{taberu}, 'to eat').} calculated for noun, verb, and prepositional phrase heads,\footnote{In this context, this refers to Japanese postpositional phrases, as the particle (e.g., \begin{CJK}{UTF8}{ipxm}に\end{CJK}, \begin{CJK}{UTF8}{ipxm}で\end{CJK}) follows the noun. The 'head' is the postposition (particle) itself, which governs the noun phrase.} varied by no more than 0.02 across versions, and the proportions of high-, mid-, and low-frequency tokens shifted by at most 3.47 percentage points.
 
 All indices were computed using the GiNZA Japanese natural language processing library \parencite{ginza}.
 
@@ -246,7 +246,6 @@ Participants were positioned at a comfortable viewing distance (approximately 60
   \label{fig:eyetracker}
 \end{figure*}
 
-\newpage
 \section{Procedure}
 
 
@@ -404,7 +403,7 @@ Domain:LC:Modality & 5.29 & 5.29 & 1 & 34 & 3.56 & {$.068$} \\
 \end{table}
 
 
-
+\newpage
 
 \subsection{Objective Validation: Pupillometry}
 
